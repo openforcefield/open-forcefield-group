@@ -12,8 +12,9 @@ amino_acids = ["R","H", "K", "D", "E", "S", "T", "N", "Q", "C", "G", "A", "I", "
 amino_acids_nogly = ["R","H", "K", "D", "E", "S", "T", "N", "Q", "C", "A", "I", "L", "M", "F", "W", "Y", "V"]
 
 sequences = ["%s-%s-%s" % ("ACE", aa, "NME") for aa in amino_acids]
-sequences.extend(["%s-%s%s-%s" % ("ACE", "G", aa, "NME") for aa in amino_acids_nogly])
-sequences.extend(["%s-%s%s-%s" % ("ACE", aa, "G", "NME") for aa in amino_acids_nogly])
+sequences = []
+sequences.extend(["%s-%s%s-%s" % ("ACE", "G", aa, "NH2") for aa in amino_acids_nogly])
+sequences.extend(["%s-%s%s-%s" % ("ACE", aa, "G", "NH2") for aa in amino_acids_nogly])
 
 temperatures_by_seq_length = {
 1: 303. * u.kelvin,  # dipeptide X
