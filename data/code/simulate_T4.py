@@ -4,7 +4,6 @@ import simtk.openmm as mm
 from simtk import unit as u
 import mdtraj.reporters
 
-padding = 1.0 * u.nanometers
 cutoff = 0.95 * u.nanometers
 
 output_frequency = 25000
@@ -35,6 +34,7 @@ simulation = app.Simulation(topology, system, integrator)
 simulation.context.setPositions(positions)
 simulation.context.setVelocitiesToTemperature(temperature)
 
+print("Using platform %s" % simulation.context.getPlatform().getName())
 
 simulation.reporters.append(mdtraj.reporters.DCDReporter(dcd_filename, output_frequency, atomSubset=atom_indices))
 simulation.reporters.append(app.StateDataReporter(sys.stdout, 1000, step=True, time=True))

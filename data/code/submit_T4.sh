@@ -15,13 +15,13 @@
 #   ppn: number of processes per node
 #  gpus: number of gpus per node
 #  GPUs are in 'exclusive' mode by default, but 'shared' keyword sets them to shared mode.
-#PBS -l nodes=1:ppn=1:gpus=1:shared
+#PBS -l nodes=1:ppn=1:gpus=1:exclusive
 #
 # export all my environment variables to the job
 #PBS -V
 #
 # job name (default = name of script file)
-#PBS -N myjob
+#PBS -N T4_production
 #
 # specify email for notifications
 #PBS -M kyleabeauchamp@gmail.com
