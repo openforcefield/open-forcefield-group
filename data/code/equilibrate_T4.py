@@ -30,7 +30,7 @@ simulation.minimizeEnergy()
 
 simulation.context.setVelocitiesToTemperature(temperature)
 print('Equilibrating...')
-simulation.step(10000)
+simulation.step(25000)
 state = simulation.context.getState(getPositions=True, getParameters=True)
 
 positions = state.getPositions()
