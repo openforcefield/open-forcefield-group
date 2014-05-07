@@ -42,4 +42,4 @@
 cd $PBS_O_WORKDIR
 
 # start spark workers
-/cbio/jclab/projects/kyleb/ForceFieldData/data/code/simulate_T4.py
+python /cbio/jclab/projects/kyleb/ForceFieldData/data/code/simulate_T4.py
