@@ -1,3 +1,4 @@
+import sys
 from simtk.openmm import app
 import simtk.openmm as mm
 from simtk import unit as u
@@ -36,5 +37,5 @@ simulation.context.setVelocitiesToTemperature(temperature)
 
 
 simulation.reporters.append(mdtraj.reporters.DCDReporter(dcd_filename, output_frequency, atomSubset=atom_indices))
-
+simulation.reporters.append(app.StateDataReporter(sys.stdout, 1000, step=True, time=True))
 simulation.step(n_steps)
