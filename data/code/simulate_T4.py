@@ -6,7 +6,7 @@ import mdtraj.reporters
 padding = 1.0 * u.nanometers
 cutoff = 0.95 * u.nanometers
 
-output_frequency = 50000
+output_frequency = 25000
 n_steps = 500000000
 temperature = 293. 
 pressure = 1.0 * u.atmospheres
