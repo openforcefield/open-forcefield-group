@@ -2,6 +2,10 @@ T4 lysozyme
 
 http://www.bmrb.wisc.edu/data_library/summary/index.php?bmrbId=16664
 
+
+Note: 1AM7 has the unnatural amino acid NZ2-TRP (TRN), which I manually edited to be TRP
+
+
 http://rcsb.org/pdb/explore/explore.do?structureId=1AM7
 
 
@@ -28,3 +32,4 @@ LGLKDFSPKSQDAVALQQIK
 ERGALPMIDRGDIRQAIDRC
 SNIWASLPGAGYGQFEHKAD
 SLIAKFKEAGGTVREIDV
+
