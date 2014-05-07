@@ -37,5 +37,5 @@ simulation.context.setVelocitiesToTemperature(temperature)
 print("Using platform %s" % simulation.context.getPlatform().getName())
 
 simulation.reporters.append(mdtraj.reporters.DCDReporter(dcd_filename, output_frequency, atomSubset=atom_indices))
-simulation.reporters.append(app.StateDataReporter(open(log_filename, 'w'), 1000, step=True, time=True))
+simulation.reporters.append(app.StateDataReporter(open(log_filename, 'w'), 5000, step=True, time=True))
 simulation.step(n_steps)
