@@ -1,4 +1,3 @@
-import sys
 from simtk.openmm import app
 import simtk.openmm as mm
 from simtk import unit as u
@@ -14,6 +13,7 @@ pressure = 1.0 * u.atmospheres
 
 pdb_filename = "./1am7_equil.pdb"
 dcd_filename = "./1am7.dcd"
+log_filename = "./1am7.log"
 
 traj = mdtraj.load(pdb_filename)
 top, bonds = traj.top.to_dataframe()
@@ -37,5 +37,5 @@ simulation.context.setVelocitiesToTemperature(temperature)
 print("Using platform %s" % simulation.context.getPlatform().getName())
 
 simulation.reporters.append(mdtraj.reporters.DCDReporter(dcd_filename, output_frequency, atomSubset=atom_indices))
-simulation.reporters.append(app.StateDataReporter(sys.stdout, 1000, step=True, time=True))
+simulation.reporters.append(app.StateDataReporter(open(log_filename, 'w'), 1000, step=True, time=True))
 simulation.step(n_steps)
