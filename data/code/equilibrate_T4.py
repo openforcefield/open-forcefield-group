@@ -1,7 +1,6 @@
 from simtk.openmm import app
 import simtk.openmm as mm
 from simtk import unit as u
-import pdbfixer
 
 padding = 1.0 * u.nanometers
 cutoff = 0.95 * u.nanometers
