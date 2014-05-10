@@ -6,10 +6,10 @@ from simtk import unit as u
 import mdtraj.reporters
 import sys
 
-platform_name = "CPU"
-timestep = 3.5 * u.femtoseconds
+platform_name = "CUDA"
+timestep = 2.0 * u.femtoseconds
 cutoff = 0.95 * u.nanometers
-output_frequency = 10000
+output_frequency = 25000
 n_steps = 500000000
 temperature = 293. 
 pressure = 1.0 * u.atmospheres
@@ -34,7 +34,7 @@ ff = app.ForceField('amber99sbnmr.xml', 'tip3p-fb.xml')
 
 platform = mm.Platform.getPlatformByName(platform_name)
 
-system = ff.createSystem(topology, nonbondedMethod=app.PME, nonbondedCutoff=cutoff, constraints=app.HAngles)
+system = ff.createSystem(topology, nonbondedMethod=app.PME, nonbondedCutoff=cutoff, constraints=app.HBonds)
 
 integrator = mm.LangevinIntegrator(temperature, 1.0 / u.picoseconds, timestep)
 system.addForce(mm.MonteCarloBarostat(pressure, temperature, 25))
