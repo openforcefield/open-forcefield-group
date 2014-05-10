@@ -1,6 +1,6 @@
 #!/bin/sh
 # walltime : maximum wall clock time (hh:mm:ss)
-#PBS -l walltime=36:00:00
+#PBS -l walltime=76:00:00
 #
 # join stdout and stderr
 #PBS -j oe
@@ -42,4 +42,4 @@
 cd $PBS_O_WORKDIR
 
 # start spark workers
-python /cbio/jclab/projects/kyleb/ForceFieldData/data/code/simulate_T4.py
+python /cbio/jclab/projects/kyleb/ForceFieldData/data/code/multi_T4.py $PBS_ARRAYID
