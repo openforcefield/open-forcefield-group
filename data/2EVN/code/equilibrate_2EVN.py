@@ -11,7 +11,7 @@ ff = app.ForceField('amber99sbildn.xml', 'tip3p-fb.xml')
 
 temperature = 300. 
 pressure = 1.0 * u.atmospheres
-ionicStrength = 0.05 u.molar
+ionicStrength = 0.05 * u.molar
 
 pdb = app.PDBFile("./%s_fixed.pdb" % code)
 

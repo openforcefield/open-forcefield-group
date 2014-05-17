@@ -1,3 +1,10 @@
+2EVN
+====
+
+http://rest.bmrb.wisc.edu/bmrb/NMR-STAR3/6338
+http://www.rcsb.org/pdb/explore/explore.do?structureId=2EVN
+
+
 MATEPPKIVWNEGKRRFETE
 DHEAFIEYKMRNNGKVMDLV
 HTYVPSFKRGLGLASHLCVA
@@ -30,3 +37,4 @@ Why does KAB like this protein?
 3.  No disulfide
 4.  ~100 residues
 5.  NMR structure matches high res (1.15 angstrom) XRAY (1XMT).  Note the XRAY sequence lacks the terminal MET, however.
+
