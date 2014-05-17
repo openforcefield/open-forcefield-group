@@ -3,11 +3,13 @@ import simtk.openmm as mm
 from simtk import unit as u
 
 code = "2evn"
+which_forcefield = "amber99sbildn.xml"
+which_water = 'tip3p-fb.xml'
 
 padding = 1.0 * u.nanometers
 cutoff = 0.95 * u.nanometers
 
-ff = app.ForceField('amber99sbildn.xml', 'tip3p-fb.xml')
+ff = app.ForceField(which_forcefield, which_water)
 
 temperature = 300. 
 pressure = 1.0 * u.atmospheres
