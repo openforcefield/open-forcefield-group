@@ -1,6 +1,6 @@
 #!/bin/sh
 # walltime : maximum wall clock time (hh:mm:ss)
-#PBS -l walltime=76:00:00
+#PBS -l walltime=96:00:00
 #
 # join stdout and stderr
 #PBS -j oe
