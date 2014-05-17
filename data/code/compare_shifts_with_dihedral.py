@@ -8,7 +8,8 @@ psi = md.compute_psi(t)[1][:, 48]  * 180 / pi
 
 
 #full_prediction = md.nmr.chemical_shifts_shiftx2(t)
-full_prediction = md.nmr.chemical_shifts_spartaplus(t)
+#full_prediction = md.nmr.chemical_shifts_spartaplus(t)
+full_prediction = md.nmr.chemical_shifts_ppm(t)
 
 
 parsed = nmrpystar.parse(open("./16664.str").read())
