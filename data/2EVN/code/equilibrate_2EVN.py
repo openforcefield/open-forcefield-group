@@ -11,11 +11,12 @@ ff = app.ForceField('amber99sbildn.xml', 'tip3p-fb.xml')
 
 temperature = 300. 
 pressure = 1.0 * u.atmospheres
+ionicStrength = 0.05 u.molar
 
 pdb = app.PDBFile("./%s_fixed.pdb" % code)
 
 modeller = app.Modeller(pdb.topology, pdb.positions)
-modeller.addSolvent(ff, padding=padding)
+modeller.addSolvent(ff, padding=padding, ionicStrength=ionicStrength)
 
 topology = modeller.topology
 positions = modeller.positions
@@ -39,4 +40,4 @@ vectors = state.getPeriodicBoxVectors()
 vectors = tuple([v[i] / u.nanometers for (i,v) in enumerate(vectors)])
 vectors = u.Quantity(vectors, u.nanometer)
 topology.setUnitCellDimensions(vectors)
-app.PDBFile.writeFile(topology, positions, open("./%s__equil.pdb" % code, 'w'))
+app.PDBFile.writeFile(topology, positions, open("./%s_equil.pdb" % code, 'w'))

@@ -20,3 +20,13 @@ DTFLPRNPSWKPLIHSEVFKSSI
       'ionic strength'   0.05 0.005 M  6338 1 
 
    stop_
+
+
+
+Why does KAB like this protein?
+
+1.  Used as in test set for parameterizing ShiftX2 (e.g. not overfit, but still validated)
+2.  Good temperature, pH, ionic
+3.  No disulfide
+4.  ~100 residues
+5.  NMR structure matches high res (1.15 angstrom) XRAY (1XMT).  Note the XRAY sequence lacks the terminal MET, however.
