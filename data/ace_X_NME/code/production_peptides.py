@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-import itertools
 from simtk.openmm import app
 import simtk.openmm as mm
 from simtk import unit as u
 import sys
-import mdtraj, mdtraj.reporters
+import mdtraj as md
 import os
 from dipeptide_parameters import *
 
@@ -43,5 +42,5 @@ for k, (ff_name, water_name, seq) in enumerate(products):
 
     simulation.context.setVelocitiesToTemperature(temperature)
     print('Running.')
-    simulation.reporters.append(mdtraj.reporters.DCDReporter(dcd_filename, output_frequency, atomSubset=atom_indices))
+    simulation.reporters.append(md.reporters.DCDReporter(dcd_filename, output_frequency, atomSubset=atom_indices))
     simulation.step(n_steps)

@@ -6,6 +6,6 @@ cap_NT = "ACE"
 cap_CT = "NME"
 
 for sequence in sequences:
-    filename = "./pdbs/%s-%s-%s.pdb" % (cap_NT, sequence, cap_CT)
+    filename = "./pdbs/%s_%s_%s.pdb" % (cap_NT, sequence, cap_CT)
     print(filename)
     pdbbuilder.build_pdb(sequence, filename, True, cap_CT)
