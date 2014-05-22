@@ -28,6 +28,11 @@ for k, (ff_name, water_name, seq) in enumerate(products):
 
     ff = app.ForceField('%s.xml' % ff_name, '%s.xml' % water_name)
     
+    modeller = app.Modeller(pdb.topology, pdb.positions)
+    modeller.addSolvent(ff, model=base_waters[water_name], padding=padding)
+    topology = modeller.getTopology()
+    
+    
     traj = mdtraj.load(pdb_filename)
     top, bonds = traj.top.to_dataframe()
     atom_indices = top.index[top.chainID == 0].values
@@ -43,5 +48,9 @@ for k, (ff_name, water_name, seq) in enumerate(products):
 
     simulation.context.setVelocitiesToTemperature(temperature)
     print('Running.')
-    simulation.reporters.append(mdtraj.reporters.DCDReporter(dcd_filename, output_frequency, atomSubset=atom_indices))
+    simulation.reporters.append(app.DCDReporter(dcd_filename, equilibrate_output_frequency))
     simulation.step(n_steps)
+
+
+
+    

@@ -2,19 +2,27 @@ from simtk import unit as u
 import itertools
 
 cutoff = 0.9 * u.nanometers
-temperature = 298 * u.kelvin
+temperature = 303 * u.kelvin
+
 timestep = 2.0 * u.femtoseconds
+equilibration_timestep = 1.0 * u.femtoseconds
+barostat_frequency = 25
 pressure = 1.0 * u.atmosphere
 friction = 0.25 / u.picoseconds
+
 n_steps = 100000000
 output_frequency = 1000
-
-ff_name = "amber99sbnmr"
-water_name = "tip3p"
+equilibrate_output_frequency = 1000
 
 amino_acids = ["R","H", "K", "D", "E", "S", "T", "N", "Q", "C", "G", "A", "I", "L", "M", "F", "W", "Y", "V"]
 
-capped_string = "capped"
 sequences = ["ACE_%s_NME" % aa for aa in amino_acids]
 
+forcefields = ["amber99sbildn", "amber96", "amber99sbnmr"]
+water_models = ["tip3p", "tip4pew", "tip3p-fb", "tip4p-fb"]
+
 products = itertools.product(forcefields, water_models, sequences)
+
+
+base_waters = {"tip3p":"tip3p", "tip4pew":"tip4pew", "tip3p-fb":"tip3p", "tip4p-fb":"tip4pew"}
+
