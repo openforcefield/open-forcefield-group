@@ -1,4 +1,5 @@
-T4 lysozyme
+======================
+Bacteriophage Lysozyme
 
 http://www.bmrb.wisc.edu/data_library/summary/index.php?bmrbId=16664
 
