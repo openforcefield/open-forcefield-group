@@ -1,4 +1,6 @@
 from simtk import unit as u
+import numpy as np
+import pandas as pd
 import itertools
 
 padding = 0.95 * u.nanometers
@@ -30,3 +32,24 @@ products = itertools.product(forcefields, water_models, sequences)
 
 base_waters = {"tip3p":"tip3p", "tip4pew":"tip4pew", "tip3p-fb":"tip3p", "tip4p-fb":"tip4pew"}
 
+def assign(phi, psi):
+    """Assign conformational states via phi and psi dihedrals.
+
+    Notes
+    -----
+    State definitions are from Sosnik, Freed, et al. 2005 Biochemistry.
+    WARNING: this takes angles in DEGREES.
+
+    """
+    
+    ass = np.zeros_like(phi, dtype='int')
+    ass = pd.Series(ass)
+    ass[:] = "other"
+    
+    #States from Tobin
+    ass[(phi <= 0)&(phi>=-100)&((psi>=50.)|(psi<= -100))] = "PPII"
+    ass[(phi <= -100)&((psi>=50.)|(psi<= -100))] = "beta"
+    ass[(phi <= 0)&((psi<=50.)&(psi>= -100))] = "alpha"
+    ass[(phi > 0)] = "other"
+    
+    return ass
