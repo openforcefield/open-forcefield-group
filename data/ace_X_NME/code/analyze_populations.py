@@ -2,7 +2,7 @@ import pandas as pd
 import mdtraj as md
 from dipeptide_parameters import *
 
-reference = pd.read_csv("./population_data/baldwin_table1.csv", index_col=0)
+reference = pd.read_csv("./experimental_data/baldwin_table1_populations.csv", index_col=0)
 
 data = []
 for (ff, water, seq) in products:
