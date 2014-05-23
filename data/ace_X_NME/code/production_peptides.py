@@ -27,7 +27,7 @@ for k, (ff_name, water_name, seq) in enumerate(products):
 
     ff = app.ForceField('%s.xml' % ff_name, '%s.xml' % water_name)
     
-    traj = mdtraj.load(pdb_filename)
+    traj = md.load(pdb_filename)
     top, bonds = traj.top.to_dataframe()
     atom_indices = top.index[top.chainID == 0].values
 
