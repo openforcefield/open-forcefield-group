@@ -5,9 +5,10 @@ from simtk import unit as u
 import sys
 import os
 from dipeptide_parameters import *
+import mdtraj as md
 
-#platform = mm.Platform.getPlatformByName("CUDA")
-#platform.setPropertyDefaultValue('CudaDeviceIndex', os.environ.get("CUDA_VISIBLE_DEVICES"))
+platform = mm.Platform.getPlatformByName("CUDA")
+platform.setPropertyDefaultValue('CudaDeviceIndex', os.environ.get("CUDA_VISIBLE_DEVICES"))
 
 rank = int(sys.argv[1])
 
@@ -18,6 +19,7 @@ for k, (ff_name, water_name, seq) in enumerate(products):
 
     pdb_filename = "./pdbs/%s.pdb" % (seq)
     output_pdb = './boxes/%s_%s_%s.pdb' % (ff_name, water_name, seq)
+    output_dcd = './boxes/%s_%s_%s.dcd' % (ff_name, water_name, seq)
     print(k)
     print(pdb_filename)
 
@@ -42,7 +44,12 @@ for k, (ff_name, water_name, seq) in enumerate(products):
     simulation.context.setVelocitiesToTemperature(temperature)
     print('Running.')
     simulation.reporters.append(app.PDBReporter(output_pdb, equilibrate_output_frequency))
-    simulation.step(n_steps)
+    simulation.reporters.append(app.DCDReporter(output_dcd, equilibrate_output_frequency))
+    simulation.step(n_equil_steps)
+    del simulation
+    del system
+    t = md.load(output_dcd, top=output_pdb)
+    t.save(output_pdb)
 
 
 
