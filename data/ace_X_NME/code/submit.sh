@@ -1,6 +1,6 @@
 #!/bin/sh
 # walltime : maximum wall clock time (hh:mm:ss)
-#PBS -l walltime=96:00:00
+#PBS -l walltime=99:99:99
 #
 # join stdout and stderr
 #PBS -j oe
@@ -42,4 +42,4 @@
 cd $PBS_O_WORKDIR
 
 # start spark workers
-/cbio/jclab/projects/kyleb/peptides/production_peptides.py $PBS_ARRAYID
+/cbio/jclab/projects/kyleb/ForceFieldData/data/ace_X_NME/code/equilibrate.py $PBS_ARRAYID
