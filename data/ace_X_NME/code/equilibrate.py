@@ -40,6 +40,9 @@ for k, (ff_name, water_name, seq) in enumerate(products):
 
     simulation = app.Simulation(topology, system, integrator)
     simulation.context.setPositions(positions)
+    
+    print('Minimizing...')
+    simulation.minimizeEnergy()
 
     simulation.context.setVelocitiesToTemperature(temperature)
     print('Running.')
