@@ -1,7 +1,7 @@
 from simtk import unit as u
 import itertools
 
-padding = 0.9 * u.nanometers
+padding = 1.0 * u.nanometers
 cutoff = 0.9 * u.nanometers
 
 temperature = 303 * u.kelvin
