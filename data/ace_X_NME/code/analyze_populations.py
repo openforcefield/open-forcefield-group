@@ -2,6 +2,8 @@ import pandas as pd
 import mdtraj as md
 from dipeptide_parameters import *
 
+reference = pd.read_csv("./population_data/baldwin_table1.csv", index_col=0)
+
 data = []
 for (ff, water, seq) in products:
     try:
@@ -18,8 +20,3 @@ for (ff, water, seq) in products:
 
 data = pd.DataFrame(data, columns=["ff", "water", "aa", "PPII", "beta", "alpha"])
 
-reference = pd.read_csv("./population_data/baldwin_table1.csv", index_col=0)
-data = data.reindex_like(reference)
-
-reference.alpha.plot(style='o', xticks=arange(data.shape[0]))
-data.alpha.plot(style='o', xticks=arange(data.shape[0]))
