@@ -15,7 +15,7 @@ barostat_frequency = 25
 pressure = 1.0 * u.atmosphere
 friction = 0.25 / u.picoseconds
 
-n_steps = 25000000
+n_steps = 30000000
 n_equil_steps = 1000000
 output_frequency = 1000
 output_frequency_allatoms = output_frequency / 10
