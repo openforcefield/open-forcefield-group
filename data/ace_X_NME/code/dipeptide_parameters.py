@@ -15,9 +15,10 @@ barostat_frequency = 25
 pressure = 1.0 * u.atmosphere
 friction = 0.25 / u.picoseconds
 
-n_steps = 10000000
+n_steps = 25000000
 n_equil_steps = 1000000
 output_frequency = 1000
+output_frequency_allatoms = output_frequency / 10
 equilibrate_output_frequency = n_equil_steps - 1
 
 amino_acids = ["R","H", "K", "D", "E", "S", "T", "N", "Q", "C", "G", "A", "I", "L", "M", "F", "W", "Y", "V"]

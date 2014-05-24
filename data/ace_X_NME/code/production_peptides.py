@@ -19,6 +19,7 @@ for k, (ff_name, water_name, seq) in enumerate(products):
 
     pdb_filename = "./boxes/%s_%s_%s.pdb" % (ff_name, water_name, seq)
     dcd_filename = './dcd/%s_%s_%s.dcd' % (ff_name, water_name, seq)
+    dcd_filename_allatoms = './dcd/%s_%s_%s_allatoms.dcd' % (ff_name, water_name, seq)
     print(k)
     print(pdb_filename)
 
@@ -43,4 +44,5 @@ for k, (ff_name, water_name, seq) in enumerate(products):
     simulation.context.setVelocitiesToTemperature(temperature)
     print('Running.')
     simulation.reporters.append(md.reporters.DCDReporter(dcd_filename, output_frequency, atomSubset=atom_indices))
+    simulation.reporters.append(md.reporters.DCDReporter(dcd_filename_allatoms, output_frequency_allatoms))
     simulation.step(n_steps)
