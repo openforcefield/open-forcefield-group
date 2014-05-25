@@ -1,5 +1,5 @@
-ForcefieldData
-==============
+Open Forcefield Group
+=====================
 
 A project for discussing and aggregating data, tools, ideas, and discussions for open force field development.
 
