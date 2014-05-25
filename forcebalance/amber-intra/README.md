@@ -6,7 +6,8 @@ Data, force fields, and input files for reparameterization of AMBER intramolecul
 Usage:
 
 (1) Install ForceBalance and Gromacs
-(2) Run: `ForceBalance test.in`
+(2) Untar targets.tar.bz2
+(3) Run: `ForceBalance test.in`
 
 - targets : All QM data (torsion scans of energy and gradient, and frequencies)
 - forcefield : Force field files with labeled parameters
