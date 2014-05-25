@@ -1,0 +1,44 @@
+CRYST1   30.000   30.000   30.000  90.00  90.00  90.00  P 21 21 21   4          
+ATOM      1  CH3 ACE 1   1       4.122   1.397   0.056                          
+ATOM      2  C   ACE 1   1       2.617   1.252   0.152                          
+ATOM      3  O   ACE 1   1       1.870   2.221   0.369                          
+ATOM      4 HH31 ACE 1   1       4.358   2.045  -0.800                          
+ATOM      5 HH32 ACE 1   1       4.485   1.894   0.966                          
+ATOM      6 HH33 ACE 1   1       4.635   0.434  -0.068                          
+ATOM      7  N   HIE 1   2       2.125  -0.004  -0.051                          
+ATOM      8  CA  HIE 1   2       0.710  -0.267   0.127                          
+ATOM      9  C   HIE 1   2       0.559  -1.795   0.201                          
+ATOM     10  O   HIE 1   2       1.553  -2.526   0.372                          
+ATOM     11  H   HIE 1   2       2.727  -0.824  -0.012                          
+ATOM     12  HA  HIE 1   2       0.378   0.172   1.086                          
+ATOM     13  CB  HIE 1   2      -0.122   0.388  -1.010                          
+ATOM     14  CG  HIE 1   2      -1.464   0.848  -0.533                          
+ATOM     15  ND1 HIE 1   2      -2.504  -0.030  -0.268                          
+ATOM     16  CD2 HIE 1   2      -1.852   2.146  -0.215                          
+ATOM     17  CE1 HIE 1   2      -3.508   0.718   0.197                          
+ATOM     18  NE2 HIE 1   2      -3.150   2.038   0.240                          
+ATOM     19  HB1 HIE 1   2      -0.226  -0.317  -1.850                          
+ATOM     20  HB2 HIE 1   2       0.437   1.265  -1.359                          
+ATOM     21  HD2 HIE 1   2      -1.317   3.090  -0.260                          
+ATOM     22  HE1 HIE 1   2      -4.487   0.362   0.503                          
+ATOM     23  HE2 HIE 1   2      -3.739   2.802   0.550                          
+ATOM     24  N   NME 1   3      -0.693  -2.279   0.052                          
+ATOM     25  CH3 NME 1   3      -0.931  -3.712   0.139                          
+ATOM     26  H   NME 1   3      -1.482  -1.633  -0.060                          
+ATOM     27 HH31 NME 1   3      -0.636  -4.101   1.125                          
+ATOM     28 HH32 NME 1   3      -2.001  -3.893  -0.022                          
+ATOM     29 HH33 NME 1   3      -0.350  -4.246  -0.626                          
+ENDMDL
+CONECT    1    2    4    5    6
+CONECT    2    3    7
+CONECT    7   11    8
+CONECT    8    9   12   13
+CONECT    9   10   24
+CONECT   13   19   20   14
+CONECT   14   15   16
+CONECT   15   17
+CONECT   16   18   21
+CONECT   17   18   22
+CONECT   18   23
+CONECT   24   25   26
+CONECT   25   27   28   29

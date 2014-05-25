@@ -1,0 +1,1 @@
+for i in `find . -name all.arc | xargs -n 1 dirname ` ; do cd $i ; ../allgro.py ; cd .. ; done
