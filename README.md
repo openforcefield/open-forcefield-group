@@ -12,7 +12,8 @@ A project for discussing and aggregating data, tools, ideas, and discussions for
 
 ## Aggregated notes and ideas
 
-* Forcefield development notes and ideas wiki page
+* [Forcefield development notes and ideas wiki page](https://github.com/choderalab/ForcefieldData/wiki)
+* [Notes from Vertex meeting](https://github.com/choderalab/ForcefieldData/wiki/Forcefield-parameterization-plans)
 
 ## Current participants
 
