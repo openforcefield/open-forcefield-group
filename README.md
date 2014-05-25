@@ -24,4 +24,5 @@ A project for discussing and aggregating data, tools, ideas, and discussions for
 * Christopher Bayly, OpenEye `<bayly@eyesopen.com>`
 * Jean-Francois Truchon, Vertex `<Jean-Francois_Truchon@vrtx.com>`
 * Dan MacKay, Novartis `<daniel.mckay@novartis.com>`
+* David Mobley, UCI `<dmobley@uci.edu>`
 
