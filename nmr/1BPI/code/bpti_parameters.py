@@ -26,8 +26,5 @@ equilibrate_output_frequency = n_equil_steps - 1
 forcefields = ["amber99sbildn", "amber96", "amber99sbnmr"]
 water_models = ["tip3p", "tip4pew", "tip3p-fb", "tip4p-fb"]
 
-products = itertools.product(forcefields, water_models, sequences)
-
-
 base_waters = {"tip3p":"tip3p", "tip4pew":"tip4pew", "tip3p-fb":"tip3p", "tip4p-fb":"tip4pew"}
 

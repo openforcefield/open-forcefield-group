@@ -1,10 +1,14 @@
 from simtk.openmm import app
 import simtk.openmm as mm
 from simtk import unit as u
-from bpti_parmeters import *
+from bpti_parameters import *
+
+which_forcefield = "amber99sbildn.xml"
+which_water = 'tip3p-fb.xml'
 
 ff = app.ForceField(which_forcefield, which_water)
 pdb = app.PDBFile("./%s_fixed.pdb" % code)
+output_pdb = "./equil.pdb"
 
 modeller = app.Modeller(pdb.topology, pdb.positions)
 modeller.addSolvent(ff, padding=padding, ionicStrength=ionicStrength)
@@ -23,10 +27,5 @@ simulation.minimizeEnergy()
 
 simulation.context.setVelocitiesToTemperature(temperature)
 print('Running.')
-simulation.reporters.append(app.PDBReporter(output_pdb, equilibrate_output_frequency))
-simulation.reporters.append(app.DCDReporter(output_dcd, equilibrate_output_frequency))
+simulation.reporters.append(app.PDBReporter(output_pdb, n_equil_steps - 1))
 simulation.step(n_equil_steps)
-del simulation
-del system
-t = md.load(output_dcd, top=output_pdb)
-t.save(output_pdb)
