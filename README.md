@@ -14,6 +14,7 @@ A project for discussing and aggregating data, tools, ideas, and discussions for
 
 * [Forcefield development notes and ideas wiki page](https://github.com/choderalab/ForcefieldData/wiki)
 * [Notes from Vertex meeting](https://github.com/choderalab/ForcefieldData/wiki/Forcefield-parameterization-plans)
+* [Small molecule forcefield working group](https://github.com/choderalab/open-forcefield-group/wiki/Small-molecule-forcefield)
 
 ## Current participants
 
