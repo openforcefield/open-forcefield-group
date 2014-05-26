@@ -35,6 +35,7 @@ dx / x = sqrt[ (da/a)^2 + (db/b)^2 ] ~ sqrt[ (0.01 / 500)^2 + (0.01 / 500)^2 ] ~
 ```
 or 0.002%.
 
+## Useful references
 
-
+* A database of molecules and liquids with their CRC data and GAFF/OPLS parameter files: http://virtualchemistry.org
 
