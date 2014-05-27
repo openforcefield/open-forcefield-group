@@ -1,0 +1,22 @@
+% Atom types for GBSA.
+% Subsequence matches replace earlier matches, so most general types should go first, more specific types later.
+
+% SMARTS atom match                   typename         comment
+
+[#6]                                  C                % carbon
+[$([#6]=[*]),$([#6]#[*]),$([#6]:[*])] C(pi)            % carbon (pi-bonded)
+[#7]                                  N                % nitrogen
+[$([#7]=[*]),$([#7]#[*]),$([#7]:[*])] N(pi)            % nitrogen (pi-bonded)
+[#8]                                  O                % oxygen
+[$([#8]=[*]),$([#8]#[*]),$([#8]:[*])] O(pi)            % oxygen (pi-bonded)
+[$([#1]~[#7])]                        HN               % H (on N)
+[$([#1]~[#8])]                        HO               % H (on O)
+[$([#1]~[#15])]                       HP               % H (on P)
+[$([#1]~[#16])]                       HS               % H (on S)
+[$([#1]~[#6])]                        HC               % H (on C)
+[#15]                                 P                % phosphorus
+[#16]                                 S                % sulfur
+[#9]                                  F                % fluorine
+[#17]                                 Cl               % chlorine
+[#35]                                 Br               % bromine
+[#53]                                 I                % iodine

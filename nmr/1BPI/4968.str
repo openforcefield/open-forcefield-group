@@ -1,0 +1,1881 @@
+data_4968
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                    entry_information
+   _Entry.Sf_framecode                   entry_information
+   _Entry.ID                             4968
+   _Entry.Title                         
+;
+Bovine Pancreatic Trypsin Inhibitor pH 5.8
+;
+   _Entry.Type                           .
+   _Entry.Version_type                   original
+   _Entry.Submission_date                2001-03-07
+   _Entry.Accession_date                 2001-03-07
+   _Entry.Last_release_date              .
+   _Entry.Original_release_date          .
+   _Entry.Origination                    author
+   _Entry.NMR_STAR_version               3.1.1.61
+   _Entry.Original_NMR_STAR_version      2.1
+   _Entry.Experimental_method            NMR
+   _Entry.Experimental_method_subtype    .
+   _Entry.Details                        .
+   _Entry.BMRB_internal_directory_name   .
+
+   loop_
+      _Entry_author.Ordinal
+      _Entry_author.Given_name
+      _Entry_author.Family_name
+      _Entry_author.First_initial
+      _Entry_author.Middle_initials
+      _Entry_author.Family_title
+      _Entry_author.Entry_ID
+
+      1 Daniel  Monleon      . .  . 4968 
+      2 Michael Baran        . C. . 4968 
+      3 Gaetano Montelione   . T. . 4968 
+      4 Parag   Sahasrabudhe . .  . 4968 
+
+   stop_
+
+   loop_
+      _Data_set.Type
+      _Data_set.Count
+      _Data_set.Entry_ID
+
+      assigned_chemical_shifts 1 4968 
+
+   stop_
+
+   loop_
+      _Datum.Type
+      _Datum.Count
+      _Datum.Entry_ID
+
+      '1H chemical shifts'  358 4968 
+      '13C chemical shifts' 119 4968 
+      '15N chemical shifts'  52 4968 
+
+   stop_
+
+   loop_
+      _Release.Release_number
+      _Release.Format_type
+      _Release.Format_version
+      _Release.Date
+      _Release.Submission_date
+      _Release.Type
+      _Release.Author
+      _Release.Detail
+      _Release.Entry_ID
+
+      1 . . 2002-04-30 . update   author 'Update of chemical shift table.' 4968 
+      2 . . 2002-02-26 . original author 'Original release.'               4968 
+
+   stop_
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+      BMRB 5307 'Time domain data of BPTI at pH 5.8' 4968 
+
+   stop_
+
+save_
+
+
+###############
+#  Citations  #
+###############
+
+save_entry_citation
+   _Citation.Sf_category                  citations
+   _Citation.Sf_framecode                 entry_citation
+   _Citation.Entry_ID                     4968
+   _Citation.ID                           1
+   _Citation.Class                       'entry citation'
+   _Citation.CAS_abstract_code            .
+   _Citation.MEDLINE_UI_code              .
+   _Citation.DOI                          .
+   _Citation.PubMed_ID                    .
+   _Citation.Full_citation                .
+   _Citation.Title                       
+;
+Rapid Data Collection and Analysis of Protein Resonance Assignments Using 
+AutoProc, AutoPeak, and AutoAssign Software 
+;
+   _Citation.Status                       submitted
+   _Citation.Type                         journal
+   _Citation.Journal_abbrev              'J. Struct. Funct. Genomics'
+   _Citation.Journal_name_full            .
+   _Citation.Journal_volume               .
+   _Citation.Journal_issue                .
+   _Citation.Journal_ASTM                 .
+   _Citation.Journal_ISSN                 .
+   _Citation.Journal_CSD                  .
+   _Citation.Book_title                   .
+   _Citation.Book_chapter_title           .
+   _Citation.Book_volume                  .
+   _Citation.Book_series                  .
+   _Citation.Book_publisher               .
+   _Citation.Book_publisher_city          .
+   _Citation.Book_ISBN                    .
+   _Citation.Conference_title             .
+   _Citation.Conference_site              .
+   _Citation.Conference_state_province    .
+   _Citation.Conference_country           .
+   _Citation.Conference_start_date        .
+   _Citation.Conference_end_date          .
+   _Citation.Conference_abstract_number   .
+   _Citation.Thesis_institution           .
+   _Citation.Thesis_institution_city      .
+   _Citation.Thesis_institution_country   .
+   _Citation.WWW_URL                      .
+   _Citation.Page_first                   .
+   _Citation.Page_last                    .
+   _Citation.Year                         .
+   _Citation.Details                      .
+
+   loop_
+      _Citation_author.Ordinal
+      _Citation_author.Given_name
+      _Citation_author.Family_name
+      _Citation_author.First_initial
+      _Citation_author.Middle_initials
+      _Citation_author.Family_title
+      _Citation_author.Entry_ID
+      _Citation_author.Citation_ID
+
+      1 Daniel   Monleon    . .    . 4968 1 
+      2 Hunter   Moseley    . N.B. . 4968 1 
+      3 Kimberly Colson     . .    . 4968 1 
+      4 Clemens  Anklin     . .    . 4968 1 
+      5 Robert   Oswald     . .    . 4968 1 
+      6 Thomas   Szyperski  . A.   . 4968 1 
+      7 Gaetano  Montelione . T.   . 4968 1 
+
+   stop_
+
+save_
+
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_system_BPTI
+   _Assembly.Sf_category                       assembly
+   _Assembly.Sf_framecode                      system_BPTI
+   _Assembly.Entry_ID                          4968
+   _Assembly.ID                                1
+   _Assembly.Name                             'Bovine Pancreatic Trypsin Inhibitor monomer'
+   _Assembly.BMRB_code                         .
+   _Assembly.Number_of_components              .
+   _Assembly.Organic_ligands                   .
+   _Assembly.Metal_ions                        .
+   _Assembly.Non_standard_bonds                .
+   _Assembly.Ambiguous_conformational_states   .
+   _Assembly.Ambiguous_chem_comp_sites         .
+   _Assembly.Molecules_in_chemical_exchange    .
+   _Assembly.Paramagnetic                      no
+   _Assembly.Thiol_state                      'all disulfide bound'
+   _Assembly.Molecular_mass                    .
+   _Assembly.Enzyme_commission_number          .
+   _Assembly.Details                           .
+   _Assembly.DB_query_date                     .
+   _Assembly.DB_query_revised_last_date        .
+
+   loop_
+      _Assembly_type.Type
+      _Assembly_type.Entry_ID
+      _Assembly_type.Assembly_ID
+
+      monomer 4968 1 
+
+   stop_
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+      1 BPTI 1 $BPTI_monomer . . . native . . . . . 4968 1 
+
+   stop_
+
+   loop_
+      _Bond.ID
+      _Bond.Type
+      _Bond.Value_order
+      _Bond.Assembly_atom_ID_1
+      _Bond.Entity_assembly_ID_1
+      _Bond.Entity_assembly_name_1
+      _Bond.Entity_ID_1
+      _Bond.Comp_ID_1
+      _Bond.Comp_index_ID_1
+      _Bond.Seq_ID_1
+      _Bond.Atom_ID_1
+      _Bond.Assembly_atom_ID_2
+      _Bond.Entity_assembly_ID_2
+      _Bond.Entity_assembly_name_2
+      _Bond.Entity_ID_2
+      _Bond.Comp_ID_2
+      _Bond.Comp_index_ID_2
+      _Bond.Seq_ID_2
+      _Bond.Atom_ID_2
+      _Bond.Auth_entity_assembly_ID_1
+      _Bond.Auth_entity_assembly_name_1
+      _Bond.Auth_seq_ID_1
+      _Bond.Auth_comp_ID_1
+      _Bond.Auth_atom_ID_1
+      _Bond.Auth_entity_assembly_ID_2
+      _Bond.Auth_entity_assembly_name_2
+      _Bond.Auth_seq_ID_2
+      _Bond.Auth_comp_ID_2
+      _Bond.Auth_atom_ID_2
+      _Bond.Entry_ID
+      _Bond.Assembly_ID
+
+      1 disulfide single . 1 . . CYS  5  5 SG . 1 . 1 CYS 55 55 SG . . . . . . . . . . 4968 1 
+      2 disulfide single . 1 . . CYS 14 14 SG . 1 . 1 CYS 38 38 SG . . . . . . . . . . 4968 1 
+      3 disulfide single . 1 . . CYS 30 30 SG . 1 . 1 CYS 51 51 SG . . . . . . . . . . 4968 1 
+
+   stop_
+
+   loop_
+      _Assembly_common_name.Name
+      _Assembly_common_name.Type
+      _Assembly_common_name.Entry_ID
+      _Assembly_common_name.Assembly_ID
+
+      'Bovine Pancreatic Trypsin Inhibitor monomer' system       4968 1 
+       BPTI                                         abbreviation 4968 1 
+
+   stop_
+
+save_
+
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_BPTI_monomer
+   _Entity.Sf_category                       entity
+   _Entity.Sf_framecode                      BPTI_monomer
+   _Entity.Entry_ID                          4968
+   _Entity.ID                                1
+   _Entity.BMRB_code                         .
+   _Entity.Name                              BPTI
+   _Entity.Type                              polymer
+   _Entity.Polymer_common_type               .
+   _Entity.Polymer_type                      polypeptide(L)
+   _Entity.Polymer_type_details              .
+   _Entity.Polymer_strand_ID                 .
+   _Entity.Polymer_seq_one_letter_code_can   .
+   _Entity.Polymer_seq_one_letter_code      
+;
+RPDFCLEPPYTGPCKARIIR
+YFYNAKAGLCQTFVYGGCRA
+KRNNFKSAEDCMRTCGGA
+;
+   _Entity.Target_identifier                 .
+   _Entity.Polymer_author_defined_seq        .
+   _Entity.Polymer_author_seq_details        .
+   _Entity.Ambiguous_conformational_states   .
+   _Entity.Ambiguous_chem_comp_sites         .
+   _Entity.Nstd_monomer                      .
+   _Entity.Nstd_chirality                    .
+   _Entity.Nstd_linkage                      .
+   _Entity.Nonpolymer_comp_ID                .
+   _Entity.Nonpolymer_comp_label             .
+   _Entity.Number_of_monomers                58
+   _Entity.Number_of_nonpolymer_components   .
+   _Entity.Paramagnetic                      .
+   _Entity.Thiol_state                      'all disulfide bound'
+   _Entity.Src_method                        .
+   _Entity.Parent_entity_ID                  .
+   _Entity.Fragment                          .
+   _Entity.Mutation                          .
+   _Entity.EC_number                         .
+   _Entity.Calc_isoelectric_point            .
+   _Entity.Formula_weight                    .
+   _Entity.Formula_weight_exptl              .
+   _Entity.Formula_weight_exptl_meth         .
+   _Entity.Details                           .
+   _Entity.DB_query_date                     .
+   _Entity.DB_query_revised_last_date        2014-05-18
+
+   loop_
+      _Entity_db_link.Ordinal
+      _Entity_db_link.Author_supplied
+      _Entity_db_link.Database_code
+      _Entity_db_link.Accession_code
+      _Entity_db_link.Entry_mol_code
+      _Entity_db_link.Entry_mol_name
+      _Entity_db_link.Entry_experimental_method
+      _Entity_db_link.Entry_structure_resolution
+      _Entity_db_link.Entry_relation_type
+      _Entity_db_link.Entry_details
+      _Entity_db_link.Chimera_segment_ID
+      _Entity_db_link.Seq_query_to_submitted_percent
+      _Entity_db_link.Seq_subject_length
+      _Entity_db_link.Seq_identity
+      _Entity_db_link.Seq_positive
+      _Entity_db_link.Seq_homology_expectation_val
+      _Entity_db_link.Seq_align_begin
+      _Entity_db_link.Seq_align_end
+      _Entity_db_link.Seq_difference_details
+      _Entity_db_link.Seq_alignment_details
+      _Entity_db_link.Entry_ID
+      _Entity_db_link.Entity_ID
+
+        1 no BMRB     1039 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+        2 no BMRB     1156 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+        3 no BMRB     1179 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+        4 no BMRB    18266 .  Aprotinin                                                                                                                        . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+        5 no BMRB      236 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+        6 no BMRB      237 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+        7 no BMRB      262 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+        8 no BMRB      263 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+        9 no BMRB      264 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       10 no BMRB      338 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       11 no BMRB      411 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       12 no BMRB      412 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       13 no BMRB      413 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       14 no BMRB      414 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       15 no BMRB      415 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       16 no BMRB      416 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       17 no BMRB      419 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       18 no BMRB       45 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       19 no BMRB       46 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       20 no BMRB       48 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       21 no BMRB      485 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       22 no BMRB     4868 .  BPTI-R52                                                                                                                         . . . . . 100.00  58  98.28  98.28 1.00e-32 . . . . 4968 1 
+       23 no BMRB       49 . "basic pancreatic trypsin inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       24 no BMRB     5171 .  BPTI_G37A                                                                                                                        . . . . . 100.00  58  98.28  98.28 3.01e-33 . . . . 4968 1 
+       25 no BMRB     5307 . "Basic Pancreatic Trypsin Inhibitor"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       26 no BMRB     5358 .  BPTI                                                                                                                             . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       27 no BMRB     5359 .  BPTI                                                                                                                             . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       28 no PDB  1B0C      . "Evidence Of A Common Decamer In Three Crystal Structures Of Bpti, Crystallized From Thiocyanate, Chloride Or Sulfate"            . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       29 no PDB  1BHC      . "Bovine Pancreatic Trypsin Inhibitor Crystallized From Thiocyanate"                                                               . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       30 no PDB  1BPI      . "The Structure Of Bovine Pancreatic Trypsin Inhibitor At 125k: Definition Of Carboxyl-Terminal Residues Glycine-57 And Alanine-5" . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       31 no PDB  1BPT      . "Crevice-Forming Mutants Of Bpti: Crystal Structures Of F22a, Y23a, N43g, And F45a"                                               . . . . . 100.00  58  98.28  98.28 7.65e-33 . . . . 4968 1 
+       32 no PDB  1BTH      . "Structure Of Thrombin Complexed With Bovine Pancreatic Trypsin Inhibitor"                                                        . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       33 no PDB  1BTI      . "Crevice-Forming Mutants In The Rigid Core Of Bovine Pancreatic Trypsin Inhibitor: Crystal Structures Of F22a, Y23a, N43g, And F" . . . . . 100.00  58  98.28  98.28 7.74e-33 . . . . 4968 1 
+       34 no PDB  1BZ5      . "Evidence Of A Common Decamer In Three Crystal Structures Of Bpti, Crystallize From Thiocyanate, Chloride Or Sulfate"             . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       35 no PDB  1BZX      . "The Crystal Structure Of Anionic Salmon Trypsin In Complex With Bovine Pancreatic Trypsin Inhibitor"                             . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       36 no PDB  1CBW      . "Bovine Chymotrypsin Complexed To Bpti"                                                                                           . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       37 no PDB  1CO7      . "R117h Mutant Rat Anionic Trypsin Complexed With Bovine Pancreatic Trypsin Inhibitor (Bpti)"                                      . . . . . 100.00  99 100.00 100.00 1.20e-34 . . . . 4968 1 
+       38 no PDB  1D0D      . "Crystal Structure Of Tick Anticoagulant Protein Complexed With Bovine Pancreatic Trypsin Inhibitor"                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       39 no PDB  1EAW      . "Crystal Structure Of The Mtsp1 (Matriptase)-Bpti (Aprotinin) Complex"                                                            . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       40 no PDB  1F5R      . "Rat Trypsinogen Mutant Complexed With Bovine Pancreatic Trypsin Inhibitor"                                                       . . . . . 100.00  65 100.00 100.00 7.15e-34 . . . . 4968 1 
+       41 no PDB  1F7Z      . "Rat Trypsinogen K15a Complexed With Bovine Pancreatic Trypsin Inhibitor"                                                         . . . . . 100.00  65 100.00 100.00 7.15e-34 . . . . 4968 1 
+       42 no PDB  1FAN      . "Crevice-Forming Mutants In The Rigid Core Of Bovine Pancreatic Trypsin Inhibitor: Crystal Structures Of F22a, Y23a, N43g, And F" . . . . . 100.00  58  98.28  98.28 7.74e-33 . . . . 4968 1 
+       43 no PDB  1FY8      . "Crystal Structure Of The Deltaile16val17 Rat Anionic Trypsinogen-Bpti Complex"                                                   . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       44 no PDB  1JV8      . "Nmr Structure Of Bpti Mutant G37a"                                                                                               . . . . . 100.00  58  98.28  98.28 3.01e-33 . . . . 4968 1 
+       45 no PDB  1JV9      . "Nmr Structure Of Bpti Mutant G37a"                                                                                               . . . . . 100.00  58  98.28  98.28 3.01e-33 . . . . 4968 1 
+       46 no PDB  1MTN      . "Bovine Alpha-Chymotrypsin:bpti Crystallization"                                                                                  . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       47 no PDB  1NAG      . "Crevice-forming Mutants In The Rigid Core Of Bovine Pancreatic Trypsin Inhibitor: Crystal Structures Of F22a, Y23a, N43g, And F" . . . . . 100.00  58  98.28  98.28 6.03e-33 . . . . 4968 1 
+       48 no PDB  1OA5      . "The Solution Structure Of Bovine Pancreatic Trypsin Inhibitor At High Pressure"                                                  . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       49 no PDB  1OA6      . "The Solution Structure Of Bovine Pancreatic Trypsin Inhibitor At High Pressure"                                                  . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       50 no PDB  1PIT      . "Determination Of A High-Quality Nuclear Magnetic Resonance Solution Structure Of The Bovine Pancreatic Trypsin Inhibitor And Co" . . . . .  98.28  58 100.00 100.00 3.62e-33 . . . . 4968 1 
+       51 no PDB  1TPA      . "The Geometry Of The Reactive Site And Of The Peptide Groups In Trypsin, Trypsinogen And Its Complexes With Inhibitors"           . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       52 no PDB  1UUA      . "Solution Structure Of A Truncated Bovine Pancreatic Trypsin Inhibitor, 3-58 Bpti"                                                . . . . .  96.55  56 100.00 100.00 2.81e-32 . . . . 4968 1 
+       53 no PDB  1YKT      . "TrypsinBPTI COMPLEX MUTANT"                                                                                                      . . . . .  96.55  56 100.00 100.00 1.70e-32 . . . . 4968 1 
+       54 no PDB  2FI4      . "Crystal Structure Of A Bpti Variant (Cys14->ser) In Complex With Trypsin"                                                        . . . . . 100.00  58  98.28  98.28 5.47e-33 . . . . 4968 1 
+       55 no PDB  2FI5      . "Crystal Structure Of A Bpti Variant (Cys38->ser) In Complex With Trypsin"                                                        . . . . . 100.00  58  98.28  98.28 5.47e-33 . . . . 4968 1 
+       56 no PDB  2FTL      . "Crystal Structure Of Trypsin Complexed With Bpti At 100k"                                                                        . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       57 no PDB  2FTM      . "Crystal Structure Of Trypsin Complexed With The Bpti Variant (Tyr35- >gly)"                                                      . . . . . 100.00  58  98.28  98.28 1.47e-32 . . . . 4968 1 
+       58 no PDB  2HEX      . "Decamers Observed In The Crystals Of Bovine Pancreatic Trypsin Inhibitor"                                                        . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       59 no PDB  2IJO      . "Crystal Structure Of The West Nile Virus Ns2b-Ns3 Protease Complexed With Bovine Pancreatic Trypsin Inhibitor"                   . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       60 no PDB  2KAI      . "Refined 2.5 Angstroms X-Ray Crystal Structure Of The Complex Formed By Porcine Kallikrein A And The Bovine Pancreatic Trypsin I" . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       61 no PDB  2PTC      . "The Geometry Of The Reactive Site And Of The Peptide Groups In Trypsin, Trypsinogen And Its Complexes With Inhibitors"           . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       62 no PDB  2R9P      . "Human Mesotrypsin Complexed With Bovine Pancreatic Trypsin Inhibitor(Bpti)"                                                      . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       63 no PDB  2RA3      . "Human Cationic Trypsin Complexed With Bovine Pancreatic Trypsin Inhibitor (bpti)"                                                . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       64 no PDB  2TGP      . "The Geometry Of The Reactive Site And Of The Peptide Groups In Trypsin, Trypsinogen And Its Complexes With Inhibitors"           . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       65 no PDB  2TPI      . "On The Disordered Activation Domain In Trypsinogen. Chemical Labelling And Low-Temperature Crystallography"                      . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       66 no PDB  3BTK      . "The Crystal Structures Of The Complexes Between Bovine Beta- Trypsin And Ten P1 Variants Of Bpti"                                . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       67 no PDB  3FP6      . "Anionic Trypsin In Complex With Bovine Pancreatic Trypsin Inhibitor (Bpti) Determined To The 1.49 A Resolution Limit"            . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       68 no PDB  3FP7      . "Anionic Trypsin Variant S195a In Complex With Bovine Pancreatic Trypsin Inhibitor (Bpti) Cleaved At The Scissile Bond (Lys15-Al" . . . . .  74.14  43 100.00 100.00 1.38e-21 . . . . 4968 1 
+       69 no PDB  3FP8      . "Anionic Trypsin Variant S195a In Complex With Bovine Pancreatic Trypsin Inhibitor (Bpti) Determined To The 1.46 A Resolution Li" . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       70 no PDB  3GYM      . "Structure Of Prostasin In Complex With Aprotinin"                                                                                . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       71 no PDB  3LDI      . "Crystal Structure Of Aprotinin In Complex With Sucrose Octasulfate: Unusual Interactions And Implication For Heparin Binding"    . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       72 no PDB  3LDJ      . "Crystal Structure Of Aprotinin In Complex With Sucrose Octasulfate: Unusual Interactions And Implication For Heparin Binding"    . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       73 no PDB  3LDM      . "Crystal Structure Of Aprotinin In Complex With Sucrose Octasulfate: Unusual Interactions And Implication For Heparin Binding"    . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       74 no PDB  3OTJ      . "A Crystal Structure Of Trypsin Complexed With Bpti (Bovine Pancreatic Trypsin Inhibitor) By X-RayNEUTRON JOINT REFINEMENT"       . . . . .  98.28  58 100.00 100.00 3.62e-33 . . . . 4968 1 
+       75 no PDB  3TGI      . "Wild-Type Rat Anionic Trypsin Complexed With Bovine Pancreatic Trypsin Inhibitor (Bpti)"                                         . . . . . 100.00  65 100.00 100.00 7.15e-34 . . . . 4968 1 
+       76 no PDB  3TGJ      . "S195a Trypsinogen Complexed With Bovine Pancreatic Trypsin Inhibitor (Bpti)"                                                     . . . . . 100.00  65 100.00 100.00 7.15e-34 . . . . 4968 1 
+       77 no PDB  3TGK      . "Trypsinogen Mutant D194n And Deletion Of Ile 16-Val 17 Complexed With Bovine Pancreatic Trypsin Inhibitor (Bpti)"                . . . . . 100.00  65 100.00 100.00 7.15e-34 . . . . 4968 1 
+       78 no PDB  3TPI      . "The Geometry Of The Reactive Site And Of The Peptide Groups In Trypsin, Trypsinogen And Its Complexes With Inhibitors"           . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       79 no PDB  3U1J      . "Aprotinin Bound To Dengue Virus Protease"                                                                                        . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       80 no PDB  4BNR      . "Extremely Stable Complex Of Crayfish Trypsin With Bovine Trypsin Inhibitor"                                                      . . . . . 100.00 100 100.00 100.00 1.07e-34 . . . . 4968 1 
+       81 no PDB  4DG4      . "Human Mesotrypsin-S39y Complexed With Bovine Pancreatic Trypsin Inhibitor (Bpti)"                                                . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       82 no PDB  4PTI      . "The Geometry Of The Reactive Site And Of The Peptide Groups In Trypsin, Trypsinogen And Its Complexes With Inhibitors"           . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       83 no PDB  4TPI      . "The Refined 2.2-angstroms (0.22-nm) X-ray Crystal Structure Of The Ternary Complex Formed By Bovine Trypsinogen, Valine-valine " . . . . . 100.00  58  98.28 100.00 2.17e-33 . . . . 4968 1 
+       84 no PDB  5PTI      . "Structure Of Bovine Pancreatic Trypsin Inhibitor. Results Of Joint Neutron And X-Ray Refinement Of Crystal Form Ii"              . . . . .  98.28  58 100.00 100.00 3.62e-33 . . . . 4968 1 
+       85 no PDB  6PTI      . "Structure Of Form Iii Crystals Of Bovine Pancreatic Trypsin Inhibitor"                                                           . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       86 no PDB  8PTI      . "Crystal Structure Of A Y35g Mutant Of Bovine Pancreatic Trypsin Inhibitor"                                                       . . . . . 100.00  58  98.28  98.28 1.47e-32 . . . . 4968 1 
+       87 no PDB  9PTI      . "Basic Pancreatic Trypsin Inhibitor (met 52 Oxidized)"                                                                            . . . . . 100.00  58  98.28  98.28 8.26e-33 . . . . 4968 1 
+       88 no EMBL CAA27062  . "unnamed protein product [Bos taurus]"                                                                                            . . . . . 100.00  89 100.00 100.00 7.97e-34 . . . . 4968 1 
+       89 no EMBL CAA27063  . "unnamed protein product [Bos taurus]"                                                                                            . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       90 no EMBL CAA28371  . "unnamed protein product [synthetic construct]"                                                                                   . . . . . 100.00  59 100.00 100.00 6.04e-34 . . . . 4968 1 
+       91 no EMBL CAA28886  . "trypsin ihibitor precursor [Bos taurus]"                                                                                         . . . . . 100.00  92 100.00 100.00 1.32e-34 . . . . 4968 1 
+       92 no EMBL CAA37967  . "aprotinin [synthetic construct]"                                                                                                 . . . . . 100.00  59 100.00 100.00 7.75e-34 . . . . 4968 1 
+       93 no GB   AAA72535  . "alkaline phosphatase/pancreatic trypsin inhibitor precursor [synthetic construct]"                                               . . . . . 100.00  79  98.28 100.00 3.21e-34 . . . . 4968 1 
+       94 no GB   AAB25189  . "major cationic kallikrein inhibitor [cattle, posterior pituitary gland, Peptide, 58 aa]"                                         . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+       95 no GB   AAD13685  . "trypsin inhibitor [Bos taurus]"                                                                                                  . . . . . 100.00 100 100.00 100.00 1.07e-34 . . . . 4968 1 
+       96 no GB   ABX57797  . "aprotinin precursor [Plastid transformation vector pAPR20]"                                                                      . . . . . 100.00 104 100.00 100.00 3.63e-35 . . . . 4968 1 
+       97 no GB   ABX57799  . "aprotinin precursor [Plastid transformation vector pAPR21]"                                                                      . . . . . 100.00 100 100.00 100.00 5.01e-35 . . . . 4968 1 
+       98 no PRF  1405218A  . "aprotinin analog"                                                                                                                . . . . .  98.28  57 100.00 100.00 3.04e-33 . . . . 4968 1 
+       99 no PRF  1405218D  . "aprotinin analog"                                                                                                                . . . . . 100.00  59 100.00 100.00 6.24e-34 . . . . 4968 1 
+      100 no PRF  1510193A  .  BPTI                                                                                                                             . . . . . 100.00 100  98.28 100.00 4.43e-34 . . . . 4968 1 
+      101 no PRF  681071A   . "inhibitor,basic pancreatic trypsin"                                                                                              . . . . . 100.00  58 100.00 100.00 7.41e-34 . . . . 4968 1 
+      102 no SP   P00974    . "RecName: Full=Pancreatic trypsin inhibitor; AltName: Full=Aprotinin; AltName: Full=Basic protease inhibitor; Short=BPI; Short=B" . . . . . 100.00 100 100.00 100.00 1.07e-34 . . . . 4968 1 
+
+   stop_
+
+   loop_
+      _Entity_common_name.Name
+      _Entity_common_name.Type
+      _Entity_common_name.Entry_ID
+      _Entity_common_name.Entity_ID
+
+      BPTI common       4968 1 
+      BPTI abbreviation 4968 1 
+
+   stop_
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+       1 . ARG . 4968 1 
+       2 . PRO . 4968 1 
+       3 . ASP . 4968 1 
+       4 . PHE . 4968 1 
+       5 . CYS . 4968 1 
+       6 . LEU . 4968 1 
+       7 . GLU . 4968 1 
+       8 . PRO . 4968 1 
+       9 . PRO . 4968 1 
+      10 . TYR . 4968 1 
+      11 . THR . 4968 1 
+      12 . GLY . 4968 1 
+      13 . PRO . 4968 1 
+      14 . CYS . 4968 1 
+      15 . LYS . 4968 1 
+      16 . ALA . 4968 1 
+      17 . ARG . 4968 1 
+      18 . ILE . 4968 1 
+      19 . ILE . 4968 1 
+      20 . ARG . 4968 1 
+      21 . TYR . 4968 1 
+      22 . PHE . 4968 1 
+      23 . TYR . 4968 1 
+      24 . ASN . 4968 1 
+      25 . ALA . 4968 1 
+      26 . LYS . 4968 1 
+      27 . ALA . 4968 1 
+      28 . GLY . 4968 1 
+      29 . LEU . 4968 1 
+      30 . CYS . 4968 1 
+      31 . GLN . 4968 1 
+      32 . THR . 4968 1 
+      33 . PHE . 4968 1 
+      34 . VAL . 4968 1 
+      35 . TYR . 4968 1 
+      36 . GLY . 4968 1 
+      37 . GLY . 4968 1 
+      38 . CYS . 4968 1 
+      39 . ARG . 4968 1 
+      40 . ALA . 4968 1 
+      41 . LYS . 4968 1 
+      42 . ARG . 4968 1 
+      43 . ASN . 4968 1 
+      44 . ASN . 4968 1 
+      45 . PHE . 4968 1 
+      46 . LYS . 4968 1 
+      47 . SER . 4968 1 
+      48 . ALA . 4968 1 
+      49 . GLU . 4968 1 
+      50 . ASP . 4968 1 
+      51 . CYS . 4968 1 
+      52 . MET . 4968 1 
+      53 . ARG . 4968 1 
+      54 . THR . 4968 1 
+      55 . CYS . 4968 1 
+      56 . GLY . 4968 1 
+      57 . GLY . 4968 1 
+      58 . ALA . 4968 1 
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+      . ARG  1  1 4968 1 
+      . PRO  2  2 4968 1 
+      . ASP  3  3 4968 1 
+      . PHE  4  4 4968 1 
+      . CYS  5  5 4968 1 
+      . LEU  6  6 4968 1 
+      . GLU  7  7 4968 1 
+      . PRO  8  8 4968 1 
+      . PRO  9  9 4968 1 
+      . TYR 10 10 4968 1 
+      . THR 11 11 4968 1 
+      . GLY 12 12 4968 1 
+      . PRO 13 13 4968 1 
+      . CYS 14 14 4968 1 
+      . LYS 15 15 4968 1 
+      . ALA 16 16 4968 1 
+      . ARG 17 17 4968 1 
+      . ILE 18 18 4968 1 
+      . ILE 19 19 4968 1 
+      . ARG 20 20 4968 1 
+      . TYR 21 21 4968 1 
+      . PHE 22 22 4968 1 
+      . TYR 23 23 4968 1 
+      . ASN 24 24 4968 1 
+      . ALA 25 25 4968 1 
+      . LYS 26 26 4968 1 
+      . ALA 27 27 4968 1 
+      . GLY 28 28 4968 1 
+      . LEU 29 29 4968 1 
+      . CYS 30 30 4968 1 
+      . GLN 31 31 4968 1 
+      . THR 32 32 4968 1 
+      . PHE 33 33 4968 1 
+      . VAL 34 34 4968 1 
+      . TYR 35 35 4968 1 
+      . GLY 36 36 4968 1 
+      . GLY 37 37 4968 1 
+      . CYS 38 38 4968 1 
+      . ARG 39 39 4968 1 
+      . ALA 40 40 4968 1 
+      . LYS 41 41 4968 1 
+      . ARG 42 42 4968 1 
+      . ASN 43 43 4968 1 
+      . ASN 44 44 4968 1 
+      . PHE 45 45 4968 1 
+      . LYS 46 46 4968 1 
+      . SER 47 47 4968 1 
+      . ALA 48 48 4968 1 
+      . GLU 49 49 4968 1 
+      . ASP 50 50 4968 1 
+      . CYS 51 51 4968 1 
+      . MET 52 52 4968 1 
+      . ARG 53 53 4968 1 
+      . THR 54 54 4968 1 
+      . CYS 55 55 4968 1 
+      . GLY 56 56 4968 1 
+      . GLY 57 57 4968 1 
+      . ALA 58 58 4968 1 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Entity_natural_src_list.Sf_category    natural_source
+   _Entity_natural_src_list.Sf_framecode   natural_source
+   _Entity_natural_src_list.Entry_ID       4968
+   _Entity_natural_src_list.ID             1
+
+   loop_
+      _Entity_natural_src.ID
+      _Entity_natural_src.Entity_ID
+      _Entity_natural_src.Entity_label
+      _Entity_natural_src.Entity_chimera_segment_ID
+      _Entity_natural_src.NCBI_taxonomy_ID
+      _Entity_natural_src.Type
+      _Entity_natural_src.Common
+      _Entity_natural_src.Organism_name_scientific
+      _Entity_natural_src.Organism_name_common
+      _Entity_natural_src.Organism_acronym
+      _Entity_natural_src.ICTVdb_decimal_code
+      _Entity_natural_src.Superkingdom
+      _Entity_natural_src.Kingdom
+      _Entity_natural_src.Genus
+      _Entity_natural_src.Species
+      _Entity_natural_src.Strain
+      _Entity_natural_src.Variant
+      _Entity_natural_src.Subvariant
+      _Entity_natural_src.Organ
+      _Entity_natural_src.Tissue
+      _Entity_natural_src.Tissue_fraction
+      _Entity_natural_src.Cell_line
+      _Entity_natural_src.Cell_type
+      _Entity_natural_src.ATCC_number
+      _Entity_natural_src.Organelle
+      _Entity_natural_src.Cellular_location
+      _Entity_natural_src.Fragment
+      _Entity_natural_src.Fraction
+      _Entity_natural_src.Secretion
+      _Entity_natural_src.Plasmid
+      _Entity_natural_src.Plasmid_details
+      _Entity_natural_src.Gene_mnemonic
+      _Entity_natural_src.Dev_stage
+      _Entity_natural_src.Details
+      _Entity_natural_src.Citation_ID
+      _Entity_natural_src.Citation_label
+      _Entity_natural_src.Entry_ID
+      _Entity_natural_src.Entity_natural_src_list_ID
+
+      1 1 $BPTI_monomer . 9913 . . 'Bos taurus' cow . . Eukaryota Metazoa Bos taurus . . . . . . . . . . . . . . . . . . . . . 4968 1 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Entity_experimental_src_list.Sf_category    experimental_source
+   _Entity_experimental_src_list.Sf_framecode   experimental_source
+   _Entity_experimental_src_list.Entry_ID       4968
+   _Entity_experimental_src_list.ID             1
+
+   loop_
+      _Entity_experimental_src.ID
+      _Entity_experimental_src.Entity_ID
+      _Entity_experimental_src.Entity_label
+      _Entity_experimental_src.Entity_chimera_segment_ID
+      _Entity_experimental_src.Production_method
+      _Entity_experimental_src.Host_org_scientific_name
+      _Entity_experimental_src.Host_org_name_common
+      _Entity_experimental_src.Host_org_details
+      _Entity_experimental_src.Host_org_NCBI_taxonomy_ID
+      _Entity_experimental_src.Host_org_genus
+      _Entity_experimental_src.Host_org_species
+      _Entity_experimental_src.Host_org_strain
+      _Entity_experimental_src.Host_org_variant
+      _Entity_experimental_src.Host_org_subvariant
+      _Entity_experimental_src.Host_org_organ
+      _Entity_experimental_src.Host_org_tissue
+      _Entity_experimental_src.Host_org_tissue_fraction
+      _Entity_experimental_src.Host_org_cell_line
+      _Entity_experimental_src.Host_org_cell_type
+      _Entity_experimental_src.Host_org_cellular_location
+      _Entity_experimental_src.Host_org_organelle
+      _Entity_experimental_src.Host_org_gene
+      _Entity_experimental_src.Host_org_culture_collection
+      _Entity_experimental_src.Host_org_ATCC_number
+      _Entity_experimental_src.Vector_type
+      _Entity_experimental_src.PDBview_host_org_vector_name
+      _Entity_experimental_src.PDBview_plasmid_name
+      _Entity_experimental_src.Vector_name
+      _Entity_experimental_src.Vector_details
+      _Entity_experimental_src.Vendor_name
+      _Entity_experimental_src.Host_org_dev_stage
+      _Entity_experimental_src.Details
+      _Entity_experimental_src.Citation_ID
+      _Entity_experimental_src.Citation_label
+      _Entity_experimental_src.Entry_ID
+      _Entity_experimental_src.Entity_experimental_src_list_ID
+
+      1 1 $BPTI_monomer . 'recombinant technology' 'Escherichia coli' 'E. coli' . . Escherichia coli n/a . . . . . . . . . . . . . . . n/a . . . . . . 4968 1 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_Sample_1
+   _Sample.Sf_category                      sample
+   _Sample.Sf_framecode                     Sample_1
+   _Sample.Entry_ID                         4968
+   _Sample.ID                               1
+   _Sample.Type                             solution
+   _Sample.Sub_type                         .
+   _Sample.Details                          .
+   _Sample.Aggregate_sample_number          .
+   _Sample.Solvent_system                   .
+   _Sample.Preparation_date                 .
+   _Sample.Preparation_expiration_date      .
+   _Sample.Polycrystallization_protocol     .
+   _Sample.Single_crystal_protocol          .
+   _Sample.Crystal_grow_apparatus           .
+   _Sample.Crystal_grow_atmosphere          .
+   _Sample.Crystal_grow_details             .
+   _Sample.Crystal_grow_method              .
+   _Sample.Crystal_grow_method_cit_ID       .
+   _Sample.Crystal_grow_pH                  .
+   _Sample.Crystal_grow_pH_range            .
+   _Sample.Crystal_grow_pressure            .
+   _Sample.Crystal_grow_pressure_esd        .
+   _Sample.Crystal_grow_seeding             .
+   _Sample.Crystal_grow_seeding_cit_ID      .
+   _Sample.Crystal_grow_temp                .
+   _Sample.Crystal_grow_temp_details        .
+   _Sample.Crystal_grow_temp_esd            .
+   _Sample.Crystal_grow_time                .
+   _Sample.Oriented_sample_prep_protocol    .
+   _Sample.Lyophilization_cryo_protectant   .
+   _Sample.Storage_protocol                 .
+
+   loop_
+      _Sample_component.ID
+      _Sample_component.Mol_common_name
+      _Sample_component.Isotopic_labeling
+      _Sample_component.Assembly_ID
+      _Sample_component.Assembly_label
+      _Sample_component.Entity_ID
+      _Sample_component.Entity_label
+      _Sample_component.Product_ID
+      _Sample_component.Type
+      _Sample_component.Concentration_val
+      _Sample_component.Concentration_val_min
+      _Sample_component.Concentration_val_max
+      _Sample_component.Concentration_val_units
+      _Sample_component.Concentration_val_err
+      _Sample_component.Vendor
+      _Sample_component.Vendor_product_name
+      _Sample_component.Vendor_product_code
+      _Sample_component.Entry_ID
+      _Sample_component.Sample_ID
+
+      1 BPTI  '[U-100% 13C; U-100% 15N]' . . 1 $BPTI_monomer . .  0.9  . . mM . . . . 4968 1 
+      2 D2O    .                         . .  .  .            . .  5    . . %  . . . . 4968 1 
+      3 NaOAc  .                         . .  .  .            . . 20    . . mM . . . . 4968 1 
+      4 CaCl2  .                         . .  .  .            . . 25    . . mM . . . . 4968 1 
+      5 NaN3   .                         . .  .  .            . .  0.02 . . %  . . . . 4968 1 
+
+   stop_
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_BPTI_cond_1
+   _Sample_condition_list.Sf_category    sample_conditions
+   _Sample_condition_list.Sf_framecode   BPTI_cond_1
+   _Sample_condition_list.Entry_ID       4968
+   _Sample_condition_list.ID             1
+   _Sample_condition_list.Details        .
+
+   loop_
+      _Sample_condition_variable.Type
+      _Sample_condition_variable.Val
+      _Sample_condition_variable.Val_err
+      _Sample_condition_variable.Val_units
+      _Sample_condition_variable.Entry_ID
+      _Sample_condition_variable.Sample_condition_list_ID
+
+      pH            5.8 0.1 n/a 4968 1 
+      temperature 303   0.2 K   4968 1 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_NMR_spectrometer_1
+   _NMR_spectrometer.Sf_category      NMR_spectrometer
+   _NMR_spectrometer.Sf_framecode     NMR_spectrometer_1
+   _NMR_spectrometer.Entry_ID         4968
+   _NMR_spectrometer.ID               1
+   _NMR_spectrometer.Details          .
+   _NMR_spectrometer.Manufacturer     VARIAN
+   _NMR_spectrometer.Model            INOVA
+   _NMR_spectrometer.Serial_number    .
+   _NMR_spectrometer.Field_strength   500
+
+save_
+
+
+save_NMR_spectrometer_2
+   _NMR_spectrometer.Sf_category      NMR_spectrometer
+   _NMR_spectrometer.Sf_framecode     NMR_spectrometer_2
+   _NMR_spectrometer.Entry_ID         4968
+   _NMR_spectrometer.ID               2
+   _NMR_spectrometer.Details          .
+   _NMR_spectrometer.Manufacturer     VARIAN
+   _NMR_spectrometer.Model            INOVA
+   _NMR_spectrometer.Serial_number    .
+   _NMR_spectrometer.Field_strength   600
+
+save_
+
+
+save_spectrometer_list
+   _NMR_spectrometer_list.Sf_category    NMR_spectrometer_list
+   _NMR_spectrometer_list.Sf_framecode   spectrometer_list
+   _NMR_spectrometer_list.Entry_ID       4968
+   _NMR_spectrometer_list.ID             1
+
+   loop_
+      _NMR_spectrometer_view.ID
+      _NMR_spectrometer_view.Name
+      _NMR_spectrometer_view.Manufacturer
+      _NMR_spectrometer_view.Model
+      _NMR_spectrometer_view.Serial_number
+      _NMR_spectrometer_view.Field_strength
+      _NMR_spectrometer_view.Details
+      _NMR_spectrometer_view.Citation_ID
+      _NMR_spectrometer_view.Citation_label
+      _NMR_spectrometer_view.Entry_ID
+      _NMR_spectrometer_view.NMR_spectrometer_list_ID
+
+      1 NMR_spectrometer_1 VARIAN INOVA . 500 . . . 4968 1 
+      2 NMR_spectrometer_2 VARIAN INOVA . 600 . . . 4968 1 
+
+   stop_
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_experiment_list
+   _Experiment_list.Sf_category    experiment_list
+   _Experiment_list.Sf_framecode   experiment_list
+   _Experiment_list.Entry_ID       4968
+   _Experiment_list.ID             1
+   _Experiment_list.Details        .
+
+   loop_
+      _Experiment.ID
+      _Experiment.Name
+      _Experiment.Raw_data_flag
+      _Experiment.NMR_spec_expt_ID
+      _Experiment.NMR_spec_expt_label
+      _Experiment.MS_expt_ID
+      _Experiment.MS_expt_label
+      _Experiment.SAXS_expt_ID
+      _Experiment.SAXS_expt_label
+      _Experiment.FRET_expt_ID
+      _Experiment.FRET_expt_label
+      _Experiment.EMR_expt_ID
+      _Experiment.EMR_expt_label
+      _Experiment.Sample_ID
+      _Experiment.Sample_label
+      _Experiment.Sample_state
+      _Experiment.Sample_volume
+      _Experiment.Sample_volume_units
+      _Experiment.Sample_condition_list_ID
+      _Experiment.Sample_condition_list_label
+      _Experiment.Sample_spinning_rate
+      _Experiment.Sample_angle
+      _Experiment.NMR_tube_type
+      _Experiment.NMR_spectrometer_ID
+      _Experiment.NMR_spectrometer_label
+      _Experiment.NMR_spectrometer_probe_ID
+      _Experiment.NMR_spectrometer_probe_label
+      _Experiment.NMR_spectral_processing_ID
+      _Experiment.NMR_spectral_processing_label
+      _Experiment.Mass_spectrometer_ID
+      _Experiment.Mass_spectrometer_label
+      _Experiment.Xray_instrument_ID
+      _Experiment.Xray_instrument_label
+      _Experiment.Fluorescence_instrument_ID
+      _Experiment.Fluorescence_instrument_label
+      _Experiment.EMR_instrument_ID
+      _Experiment.EMR_instrument_label
+      _Experiment.Chromatographic_system_ID
+      _Experiment.Chromatographic_system_label
+      _Experiment.Chromatographic_column_ID
+      _Experiment.Chromatographic_column_label
+      _Experiment.Entry_ID
+      _Experiment.Experiment_list_ID
+
+      1 'N15 HSQC'       . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+      2  HNCA            . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+      3  HN(CO)CA        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+      4  CBCA(CO)NH      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+      5  HNCACB          . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+      6  HNCO            . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+      7  HN(CA)CO        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+      8 'HCCH TOCSY'     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+      9 'HC(CO)CH TOCSY' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4968 1 
+
+   stop_
+
+save_
+
+
+save_NMR_spec_expt__0_1
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_1
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              1
+   _NMR_spec_expt.Name                           'N15 HSQC'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_2
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_2
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              2
+   _NMR_spec_expt.Name                            HNCA
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_3
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_3
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              3
+   _NMR_spec_expt.Name                            HN(CO)CA
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_4
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_4
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              4
+   _NMR_spec_expt.Name                            CBCA(CO)NH
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_5
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_5
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              5
+   _NMR_spec_expt.Name                            HNCACB
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_6
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_6
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              6
+   _NMR_spec_expt.Name                            HNCO
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_7
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_7
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              7
+   _NMR_spec_expt.Name                            HN(CA)CO
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_8
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_8
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              8
+   _NMR_spec_expt.Name                           'HCCH TOCSY'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_9
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_9
+   _NMR_spec_expt.Entry_ID                        4968
+   _NMR_spec_expt.ID                              9
+   _NMR_spec_expt.Name                           'HC(CO)CH TOCSY'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference
+   _Chem_shift_reference.Sf_category    chem_shift_reference
+   _Chem_shift_reference.Sf_framecode   chemical_shift_reference
+   _Chem_shift_reference.Entry_ID       4968
+   _Chem_shift_reference.ID             1
+   _Chem_shift_reference.Details        .
+
+   loop_
+      _Chem_shift_ref.Atom_type
+      _Chem_shift_ref.Atom_isotope_number
+      _Chem_shift_ref.Mol_common_name
+      _Chem_shift_ref.Atom_group
+      _Chem_shift_ref.Concentration_val
+      _Chem_shift_ref.Concentration_units
+      _Chem_shift_ref.Solvent
+      _Chem_shift_ref.Rank
+      _Chem_shift_ref.Chem_shift_units
+      _Chem_shift_ref.Chem_shift_val
+      _Chem_shift_ref.Ref_method
+      _Chem_shift_ref.Ref_type
+      _Chem_shift_ref.Indirect_shift_ratio
+      _Chem_shift_ref.External_ref_loc
+      _Chem_shift_ref.External_ref_sample_geometry
+      _Chem_shift_ref.External_ref_axis
+      _Chem_shift_ref.Indirect_shift_ratio_cit_ID
+      _Chem_shift_ref.Indirect_shift_ratio_cit_label
+      _Chem_shift_ref.Ref_correction_type
+      _Chem_shift_ref.Correction_val
+      _Chem_shift_ref.Correction_val_cit_ID
+      _Chem_shift_ref.Correction_val_cit_label
+      _Chem_shift_ref.Entry_ID
+      _Chem_shift_ref.Chem_shift_reference_ID
+
+      H  1 DSS . . . . . ppm 0.00 external direct   1.0         external cylindrical . . . . . . . 4968 1 
+      N 15 DSS . . . . . ppm  .   .        indirect 0.101329118 .        .           . . . . . . . 4968 1 
+      C 13 DSS . . . . . ppm  .   .        indirect 0.251449537 .        .           . . . . . . . 4968 1 
+
+   stop_
+
+save_
+
+
+     ###################################
+     #  Assigned chemical shift lists  #
+     ###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+save_BPTI_shifts_1
+   _Assigned_chem_shift_list.Sf_category                   assigned_chemical_shifts
+   _Assigned_chem_shift_list.Sf_framecode                  BPTI_shifts_1
+   _Assigned_chem_shift_list.Entry_ID                      4968
+   _Assigned_chem_shift_list.ID                            1
+   _Assigned_chem_shift_list.Sample_condition_list_ID      1
+   _Assigned_chem_shift_list.Sample_condition_list_label  $BPTI_cond_1
+   _Assigned_chem_shift_list.Chem_shift_reference_ID       1
+   _Assigned_chem_shift_list.Chem_shift_reference_label   $chemical_shift_reference
+   _Assigned_chem_shift_list.Chem_shift_1H_err             .
+   _Assigned_chem_shift_list.Chem_shift_13C_err            .
+   _Assigned_chem_shift_list.Chem_shift_15N_err            .
+   _Assigned_chem_shift_list.Chem_shift_31P_err            .
+   _Assigned_chem_shift_list.Chem_shift_2H_err             .
+   _Assigned_chem_shift_list.Chem_shift_19F_err            .
+   _Assigned_chem_shift_list.Error_derivation_method       .
+   _Assigned_chem_shift_list.Details                       .
+   _Assigned_chem_shift_list.Text_data_format              .
+   _Assigned_chem_shift_list.Text_data                     .
+
+   loop_
+      _Chem_shift_experiment.Experiment_ID
+      _Chem_shift_experiment.Experiment_name
+      _Chem_shift_experiment.Sample_ID
+      _Chem_shift_experiment.Sample_label
+      _Chem_shift_experiment.Sample_state
+      _Chem_shift_experiment.Entry_ID
+      _Chem_shift_experiment.Assigned_chem_shift_list_ID
+
+      . . 1 $Sample_1 . 4968 1 
+
+   stop_
+
+   loop_
+      _Atom_chem_shift.ID
+      _Atom_chem_shift.Assembly_atom_ID
+      _Atom_chem_shift.Entity_assembly_ID
+      _Atom_chem_shift.Entity_ID
+      _Atom_chem_shift.Comp_index_ID
+      _Atom_chem_shift.Seq_ID
+      _Atom_chem_shift.Comp_ID
+      _Atom_chem_shift.Atom_ID
+      _Atom_chem_shift.Atom_type
+      _Atom_chem_shift.Atom_isotope_number
+      _Atom_chem_shift.Val
+      _Atom_chem_shift.Val_err
+      _Atom_chem_shift.Assign_fig_of_merit
+      _Atom_chem_shift.Ambiguity_code
+      _Atom_chem_shift.Occupancy
+      _Atom_chem_shift.Resonance_ID
+      _Atom_chem_shift.Auth_entity_assembly_ID
+      _Atom_chem_shift.Auth_asym_ID
+      _Atom_chem_shift.Auth_seq_ID
+      _Atom_chem_shift.Auth_comp_ID
+      _Atom_chem_shift.Auth_atom_ID
+      _Atom_chem_shift.Details
+      _Atom_chem_shift.Entry_ID
+      _Atom_chem_shift.Assigned_chem_shift_list_ID
+
+        1 . 1 1  1  1 ARG HA   H  1   4.538 . . 1 . . . . . . . . 4968 1 
+        2 . 1 1  1  1 ARG HB2  H  1   2.058 . . 2 . . . . . . . . 4968 1 
+        3 . 1 1  1  1 ARG CA   C 13  53.720 . . 1 . . . . . . . . 4968 1 
+        4 . 1 1  1  1 ARG HB3  H  1   1.978 . . 2 . . . . . . . . 4968 1 
+        5 . 1 1  2  2 PRO HG3  H  1   1.778 . . 2 . . . . . . . . 4968 1 
+        6 . 1 1  2  2 PRO CA   C 13  63.720 . . 1 . . . . . . . . 4968 1 
+        7 . 1 1  2  2 PRO CD   C 13  51.720 . . 1 . . . . . . . . 4968 1 
+        8 . 1 1  2  2 PRO HA   H  1   4.508 . . 1 . . . . . . . . 4968 1 
+        9 . 1 1  2  2 PRO HD2  H  1   3.908 . . 2 . . . . . . . . 4968 1 
+       10 . 1 1  2  2 PRO HD3  H  1   3.778 . . 2 . . . . . . . . 4968 1 
+       11 . 1 1  3  3 ASP H    H  1   8.644 . . 1 . . . . . . . . 4968 1 
+       12 . 1 1  3  3 ASP HA   H  1   4.428 . . 1 . . . . . . . . 4968 1 
+       13 . 1 1  3  3 ASP HB2  H  1   2.948 . . 1 . . . . . . . . 4968 1 
+       14 . 1 1  3  3 ASP CA   C 13  57.720 . . 1 . . . . . . . . 4968 1 
+       15 . 1 1  3  3 ASP HB3  H  1   2.948 . . 1 . . . . . . . . 4968 1 
+       16 . 1 1  3  3 ASP N    N 15 123.360 . . 1 . . . . . . . . 4968 1 
+       17 . 1 1  4  4 PHE HZ   H  1   7.488 . . 1 . . . . . . . . 4968 1 
+       18 . 1 1  4  4 PHE H    H  1   7.804 . . 1 . . . . . . . . 4968 1 
+       19 . 1 1  4  4 PHE CD1  C 13 133.220 . . 1 . . . . . . . . 4968 1 
+       20 . 1 1  4  4 PHE CE1  C 13 132.720 . . 1 . . . . . . . . 4968 1 
+       21 . 1 1  4  4 PHE CD2  C 13 133.220 . . 1 . . . . . . . . 4968 1 
+       22 . 1 1  4  4 PHE HA   H  1   4.768 . . 1 . . . . . . . . 4968 1 
+       23 . 1 1  4  4 PHE CE2  C 13 132.720 . . 1 . . . . . . . . 4968 1 
+       24 . 1 1  4  4 PHE HB2  H  1   3.528 . . 2 . . . . . . . . 4968 1 
+       25 . 1 1  4  4 PHE HD1  H  1   7.178 . . 1 . . . . . . . . 4968 1 
+       26 . 1 1  4  4 PHE HB3  H  1   3.118 . . 2 . . . . . . . . 4968 1 
+       27 . 1 1  4  4 PHE CZ   C 13 130.720 . . 1 . . . . . . . . 4968 1 
+       28 . 1 1  4  4 PHE HE1  H  1   7.548 . . 1 . . . . . . . . 4968 1 
+       29 . 1 1  4  4 PHE HD2  H  1   7.178 . . 1 . . . . . . . . 4968 1 
+       30 . 1 1  4  4 PHE N    N 15 115.660 . . 1 . . . . . . . . 4968 1 
+       31 . 1 1  4  4 PHE HE2  H  1   7.548 . . 1 . . . . . . . . 4968 1 
+       32 . 1 1  5  5 CYS H    H  1   7.434 . . 1 . . . . . . . . 4968 1 
+       33 . 1 1  5  5 CYS HA   H  1   4.528 . . 1 . . . . . . . . 4968 1 
+       34 . 1 1  5  5 CYS HB2  H  1   2.918 . . 2 . . . . . . . . 4968 1 
+       35 . 1 1  5  5 CYS CA   C 13  58.220 . . 1 . . . . . . . . 4968 1 
+       36 . 1 1  5  5 CYS HB3  H  1   3.038 . . 2 . . . . . . . . 4968 1 
+       37 . 1 1  5  5 CYS N    N 15 120.660 . . 1 . . . . . . . . 4968 1 
+       38 . 1 1  6  6 LEU CA   C 13  54.720 . . 1 . . . . . . . . 4968 1 
+       39 . 1 1  6  6 LEU H    H  1   7.544 . . 1 . . . . . . . . 4968 1 
+       40 . 1 1  6  6 LEU CD1  C 13  23.720 . . 2 . . . . . . . . 4968 1 
+       41 . 1 1  6  6 LEU CD2  C 13  25.220 . . 2 . . . . . . . . 4968 1 
+       42 . 1 1  6  6 LEU HA   H  1   4.668 . . 1 . . . . . . . . 4968 1 
+       43 . 1 1  6  6 LEU CG   C 13  28.220 . . 1 . . . . . . . . 4968 1 
+       44 . 1 1  6  6 LEU HB2  H  1   2.028 . . 1 . . . . . . . . 4968 1 
+       45 . 1 1  6  6 LEU HB3  H  1   2.028 . . 1 . . . . . . . . 4968 1 
+       46 . 1 1  6  6 LEU HD11 H  1   1.028 . . 2 . . . . . . . . 4968 1 
+       47 . 1 1  6  6 LEU HD12 H  1   1.028 . . 2 . . . . . . . . 4968 1 
+       48 . 1 1  6  6 LEU HD13 H  1   1.028 . . 2 . . . . . . . . 4968 1 
+       49 . 1 1  6  6 LEU HD21 H  1   1.118 . . 2 . . . . . . . . 4968 1 
+       50 . 1 1  6  6 LEU HD22 H  1   1.118 . . 2 . . . . . . . . 4968 1 
+       51 . 1 1  6  6 LEU HD23 H  1   1.118 . . 2 . . . . . . . . 4968 1 
+       52 . 1 1  6  6 LEU N    N 15 113.960 . . 1 . . . . . . . . 4968 1 
+       53 . 1 1  6  6 LEU HG   H  1   1.878 . . 1 . . . . . . . . 4968 1 
+       54 . 1 1  7  7 GLU H    H  1   7.484 . . 1 . . . . . . . . 4968 1 
+       55 . 1 1  7  7 GLU HA   H  1   4.758 . . 1 . . . . . . . . 4968 1 
+       56 . 1 1  7  7 GLU HG2  H  1   2.728 . . 2 . . . . . . . . 4968 1 
+       57 . 1 1  7  7 GLU HG3  H  1   2.828 . . 2 . . . . . . . . 4968 1 
+       58 . 1 1  7  7 GLU HB2  H  1   2.338 . . 2 . . . . . . . . 4968 1 
+       59 . 1 1  7  7 GLU HB3  H  1   2.428 . . 2 . . . . . . . . 4968 1 
+       60 . 1 1  7  7 GLU N    N 15 120.560 . . 1 . . . . . . . . 4968 1 
+       61 . 1 1  8  8 PRO HG2  H  1   2.298 . . 1 . . . . . . . . 4968 1 
+       62 . 1 1  8  8 PRO HG3  H  1   2.298 . . 1 . . . . . . . . 4968 1 
+       63 . 1 1  8  8 PRO CA   C 13  62.220 . . 1 . . . . . . . . 4968 1 
+       64 . 1 1  8  8 PRO CD   C 13  50.720 . . 1 . . . . . . . . 4968 1 
+       65 . 1 1  8  8 PRO HA   H  1   4.808 . . 1 . . . . . . . . 4968 1 
+       66 . 1 1  8  8 PRO HB2  H  1   2.008 . . 2 . . . . . . . . 4968 1 
+       67 . 1 1  8  8 PRO HB3  H  1   2.618 . . 2 . . . . . . . . 4968 1 
+       68 . 1 1  8  8 PRO HD2  H  1   3.898 . . 2 . . . . . . . . 4968 1 
+       69 . 1 1  8  8 PRO HD3  H  1   4.168 . . 2 . . . . . . . . 4968 1 
+       70 . 1 1  9  9 PRO HG3  H  1   1.438 . . 2 . . . . . . . . 4968 1 
+       71 . 1 1  9  9 PRO CA   C 13  63.220 . . 1 . . . . . . . . 4968 1 
+       72 . 1 1  9  9 PRO CB   C 13  30.220 . . 1 . . . . . . . . 4968 1 
+       73 . 1 1  9  9 PRO HA   H  1   3.888 . . 1 . . . . . . . . 4968 1 
+       74 . 1 1  9  9 PRO CG   C 13  26.220 . . 1 . . . . . . . . 4968 1 
+       75 . 1 1  9  9 PRO HD2  H  1   3.108 . . 2 . . . . . . . . 4968 1 
+       76 . 1 1  9  9 PRO HD3  H  1   3.518 . . 2 . . . . . . . . 4968 1 
+       77 . 1 1 10 10 TYR CA   C 13  56.720 . . 1 . . . . . . . . 4968 1 
+       78 . 1 1 10 10 TYR H    H  1   7.764 . . 1 . . . . . . . . 4968 1 
+       79 . 1 1 10 10 TYR CD1  C 13 135.220 . . 1 . . . . . . . . 4968 1 
+       80 . 1 1 10 10 TYR CE1  C 13 120.220 . . 1 . . . . . . . . 4968 1 
+       81 . 1 1 10 10 TYR CD2  C 13 135.220 . . 1 . . . . . . . . 4968 1 
+       82 . 1 1 10 10 TYR HA   H  1   5.108 . . 1 . . . . . . . . 4968 1 
+       83 . 1 1 10 10 TYR CE2  C 13 120.220 . . 1 . . . . . . . . 4968 1 
+       84 . 1 1 10 10 TYR HB2  H  1   3.138 . . 1 . . . . . . . . 4968 1 
+       85 . 1 1 10 10 TYR HD1  H  1   7.498 . . 1 . . . . . . . . 4968 1 
+       86 . 1 1 10 10 TYR HB3  H  1   3.138 . . 1 . . . . . . . . 4968 1 
+       87 . 1 1 10 10 TYR HE1  H  1   7.268 . . 1 . . . . . . . . 4968 1 
+       88 . 1 1 10 10 TYR HD2  H  1   7.498 . . 1 . . . . . . . . 4968 1 
+       89 . 1 1 10 10 TYR N    N 15 122.860 . . 1 . . . . . . . . 4968 1 
+       90 . 1 1 10 10 TYR HE2  H  1   7.268 . . 1 . . . . . . . . 4968 1 
+       91 . 1 1 11 11 THR HG21 H  1   1.558 . . 1 . . . . . . . . 4968 1 
+       92 . 1 1 11 11 THR HG22 H  1   1.558 . . 1 . . . . . . . . 4968 1 
+       93 . 1 1 11 11 THR HG23 H  1   1.558 . . 1 . . . . . . . . 4968 1 
+       94 . 1 1 11 11 THR CA   C 13  67.220 . . 1 . . . . . . . . 4968 1 
+       95 . 1 1 11 11 THR CB   C 13  70.720 . . 1 . . . . . . . . 4968 1 
+       96 . 1 1 11 11 THR H    H  1   8.914 . . 1 . . . . . . . . 4968 1 
+       97 . 1 1 11 11 THR HA   H  1   4.698 . . 1 . . . . . . . . 4968 1 
+       98 . 1 1 11 11 THR HB   H  1   4.228 . . 1 . . . . . . . . 4968 1 
+       99 . 1 1 11 11 THR CG2  C 13  21.720 . . 1 . . . . . . . . 4968 1 
+      100 . 1 1 11 11 THR N    N 15 127.060 . . 1 . . . . . . . . 4968 1 
+      101 . 1 1 12 12 GLY H    H  1   7.134 . . 1 . . . . . . . . 4968 1 
+      102 . 1 1 12 12 GLY HA2  H  1   3.428 . . 2 . . . . . . . . 4968 1 
+      103 . 1 1 12 12 GLY HA3  H  1   4.068 . . 2 . . . . . . . . 4968 1 
+      104 . 1 1 12 12 GLY CA   C 13  46.720 . . 1 . . . . . . . . 4968 1 
+      105 . 1 1 12 12 GLY N    N 15 106.860 . . 1 . . . . . . . . 4968 1 
+      106 . 1 1 13 13 PRO HG2  H  1   2.168 . . 1 . . . . . . . . 4968 1 
+      107 . 1 1 13 13 PRO HG3  H  1   2.168 . . 1 . . . . . . . . 4968 1 
+      108 . 1 1 13 13 PRO CA   C 13  64.720 . . 1 . . . . . . . . 4968 1 
+      109 . 1 1 13 13 PRO HA   H  1   4.728 . . 1 . . . . . . . . 4968 1 
+      110 . 1 1 13 13 PRO HB2  H  1   2.278 . . 2 . . . . . . . . 4968 1 
+      111 . 1 1 13 13 PRO HB3  H  1   2.358 . . 2 . . . . . . . . 4968 1 
+      112 . 1 1 13 13 PRO HD2  H  1   3.768 . . 2 . . . . . . . . 4968 1 
+      113 . 1 1 13 13 PRO HD3  H  1   3.808 . . 2 . . . . . . . . 4968 1 
+      114 . 1 1 14 14 CYS H    H  1   8.594 . . 1 . . . . . . . . 4968 1 
+      115 . 1 1 14 14 CYS HA   H  1   4.748 . . 1 . . . . . . . . 4968 1 
+      116 . 1 1 14 14 CYS HB2  H  1   2.958 . . 2 . . . . . . . . 4968 1 
+      117 . 1 1 14 14 CYS CA   C 13  60.220 . . 1 . . . . . . . . 4968 1 
+      118 . 1 1 14 14 CYS HB3  H  1   3.658 . . 2 . . . . . . . . 4968 1 
+      119 . 1 1 14 14 CYS N    N 15 117.660 . . 1 . . . . . . . . 4968 1 
+      120 . 1 1 15 15 LYS HG2  H  1   1.568 . . 1 . . . . . . . . 4968 1 
+      121 . 1 1 15 15 LYS HG3  H  1   1.568 . . 1 . . . . . . . . 4968 1 
+      122 . 1 1 15 15 LYS CA   C 13  56.220 . . 1 . . . . . . . . 4968 1 
+      123 . 1 1 15 15 LYS H    H  1   7.964 . . 1 . . . . . . . . 4968 1 
+      124 . 1 1 15 15 LYS HA   H  1   4.578 . . 1 . . . . . . . . 4968 1 
+      125 . 1 1 15 15 LYS HB2  H  1   1.768 . . 2 . . . . . . . . 4968 1 
+      126 . 1 1 15 15 LYS HB3  H  1   2.268 . . 2 . . . . . . . . 4968 1 
+      127 . 1 1 15 15 LYS N    N 15 115.260 . . 1 . . . . . . . . 4968 1 
+      128 . 1 1 16 16 ALA H    H  1   8.194 . . 1 . . . . . . . . 4968 1 
+      129 . 1 1 16 16 ALA HA   H  1   4.478 . . 1 . . . . . . . . 4968 1 
+      130 . 1 1 16 16 ALA HB1  H  1   1.348 . . 1 . . . . . . . . 4968 1 
+      131 . 1 1 16 16 ALA HB2  H  1   1.348 . . 1 . . . . . . . . 4968 1 
+      132 . 1 1 16 16 ALA HB3  H  1   1.348 . . 1 . . . . . . . . 4968 1 
+      133 . 1 1 16 16 ALA CA   C 13  52.220 . . 1 . . . . . . . . 4968 1 
+      134 . 1 1 16 16 ALA CB   C 13  20.220 . . 1 . . . . . . . . 4968 1 
+      135 . 1 1 16 16 ALA N    N 15 123.460 . . 1 . . . . . . . . 4968 1 
+      136 . 1 1 17 17 ARG HG2  H  1   1.458 . . 2 . . . . . . . . 4968 1 
+      137 . 1 1 17 17 ARG HG3  H  1   1.478 . . 2 . . . . . . . . 4968 1 
+      138 . 1 1 17 17 ARG CA   C 13  55.220 . . 1 . . . . . . . . 4968 1 
+      139 . 1 1 17 17 ARG H    H  1   8.184 . . 1 . . . . . . . . 4968 1 
+      140 . 1 1 17 17 ARG HA   H  1   4.488 . . 1 . . . . . . . . 4968 1 
+      141 . 1 1 17 17 ARG HB2  H  1   1.788 . . 1 . . . . . . . . 4968 1 
+      142 . 1 1 17 17 ARG HB3  H  1   1.788 . . 1 . . . . . . . . 4968 1 
+      143 . 1 1 17 17 ARG HD2  H  1   3.278 . . 1 . . . . . . . . 4968 1 
+      144 . 1 1 17 17 ARG N    N 15 118.060 . . 1 . . . . . . . . 4968 1 
+      145 . 1 1 17 17 ARG HD3  H  1   3.278 . . 1 . . . . . . . . 4968 1 
+      146 . 1 1 18 18 ILE HG21 H  1   1.138 . . 1 . . . . . . . . 4968 1 
+      147 . 1 1 18 18 ILE HG22 H  1   1.138 . . 1 . . . . . . . . 4968 1 
+      148 . 1 1 18 18 ILE HG23 H  1   1.138 . . 1 . . . . . . . . 4968 1 
+      149 . 1 1 18 18 ILE HG12 H  1   1.148 . . 2 . . . . . . . . 4968 1 
+      150 . 1 1 18 18 ILE HG13 H  1   1.548 . . 2 . . . . . . . . 4968 1 
+      151 . 1 1 18 18 ILE CA   C 13  60.220 . . 1 . . . . . . . . 4968 1 
+      152 . 1 1 18 18 ILE CD1  C 13  14.220 . . 1 . . . . . . . . 4968 1 
+      153 . 1 1 18 18 ILE H    H  1   8.084 . . 1 . . . . . . . . 4968 1 
+      154 . 1 1 18 18 ILE HA   H  1   4.368 . . 1 . . . . . . . . 4968 1 
+      155 . 1 1 18 18 ILE HB   H  1   2.038 . . 1 . . . . . . . . 4968 1 
+      156 . 1 1 18 18 ILE HD11 H  1   0.878 . . 1 . . . . . . . . 4968 1 
+      157 . 1 1 18 18 ILE HD12 H  1   0.878 . . 1 . . . . . . . . 4968 1 
+      158 . 1 1 18 18 ILE HD13 H  1   0.878 . . 1 . . . . . . . . 4968 1 
+      159 . 1 1 18 18 ILE CG2  C 13  18.720 . . 1 . . . . . . . . 4968 1 
+      160 . 1 1 18 18 ILE N    N 15 125.060 . . 1 . . . . . . . . 4968 1 
+      161 . 1 1 19 19 ILE HG21 H  1   0.888 . . 1 . . . . . . . . 4968 1 
+      162 . 1 1 19 19 ILE HG22 H  1   0.888 . . 1 . . . . . . . . 4968 1 
+      163 . 1 1 19 19 ILE HG23 H  1   0.888 . . 1 . . . . . . . . 4968 1 
+      164 . 1 1 19 19 ILE HG12 H  1   1.568 . . 2 . . . . . . . . 4968 1 
+      165 . 1 1 19 19 ILE HG13 H  1   1.648 . . 2 . . . . . . . . 4968 1 
+      166 . 1 1 19 19 ILE CA   C 13  61.220 . . 1 . . . . . . . . 4968 1 
+      167 . 1 1 19 19 ILE CD1  C 13  10.720 . . 1 . . . . . . . . 4968 1 
+      168 . 1 1 19 19 ILE H    H  1   8.654 . . 1 . . . . . . . . 4968 1 
+      169 . 1 1 19 19 ILE HA   H  1   4.478 . . 1 . . . . . . . . 4968 1 
+      170 . 1 1 19 19 ILE HB   H  1   2.128 . . 1 . . . . . . . . 4968 1 
+      171 . 1 1 19 19 ILE HD11 H  1   0.858 . . 1 . . . . . . . . 4968 1 
+      172 . 1 1 19 19 ILE HD12 H  1   0.858 . . 1 . . . . . . . . 4968 1 
+      173 . 1 1 19 19 ILE HD13 H  1   0.858 . . 1 . . . . . . . . 4968 1 
+      174 . 1 1 19 19 ILE CG2  C 13  17.720 . . 1 . . . . . . . . 4968 1 
+      175 . 1 1 19 19 ILE N    N 15 128.160 . . 1 . . . . . . . . 4968 1 
+      176 . 1 1 20 20 ARG HG2  H  1   1.528 . . 2 . . . . . . . . 4968 1 
+      177 . 1 1 20 20 ARG HG3  H  1   1.928 . . 2 . . . . . . . . 4968 1 
+      178 . 1 1 20 20 ARG CA   C 13  52.220 . . 1 . . . . . . . . 4968 1 
+      179 . 1 1 20 20 ARG H    H  1   8.364 . . 1 . . . . . . . . 4968 1 
+      180 . 1 1 20 20 ARG HA   H  1   4.898 . . 1 . . . . . . . . 4968 1 
+      181 . 1 1 20 20 ARG HB2  H  1   1.008 . . 2 . . . . . . . . 4968 1 
+      182 . 1 1 20 20 ARG HB3  H  1   1.978 . . 2 . . . . . . . . 4968 1 
+      183 . 1 1 20 20 ARG HE   H  1   7.628 . . 1 . . . . . . . . 4968 1 
+      184 . 1 1 20 20 ARG HD2  H  1   3.198 . . 2 . . . . . . . . 4968 1 
+      185 . 1 1 20 20 ARG N    N 15 129.560 . . 1 . . . . . . . . 4968 1 
+      186 . 1 1 20 20 ARG HD3  H  1   3.658 . . 2 . . . . . . . . 4968 1 
+      187 . 1 1 21 21 TYR CA   C 13  57.720 . . 1 . . . . . . . . 4968 1 
+      188 . 1 1 21 21 TYR H    H  1   9.154 . . 1 . . . . . . . . 4968 1 
+      189 . 1 1 21 21 TYR CD1  C 13 133.220 . . 1 . . . . . . . . 4968 1 
+      190 . 1 1 21 21 TYR CE1  C 13 119.720 . . 1 . . . . . . . . 4968 1 
+      191 . 1 1 21 21 TYR CD2  C 13 133.220 . . 1 . . . . . . . . 4968 1 
+      192 . 1 1 21 21 TYR HA   H  1   5.858 . . 1 . . . . . . . . 4968 1 
+      193 . 1 1 21 21 TYR CE2  C 13 119.720 . . 1 . . . . . . . . 4968 1 
+      194 . 1 1 21 21 TYR HB2  H  1   2.868 . . 1 . . . . . . . . 4968 1 
+      195 . 1 1 21 21 TYR HD1  H  1   6.888 . . 1 . . . . . . . . 4968 1 
+      196 . 1 1 21 21 TYR HB3  H  1   2.868 . . 1 . . . . . . . . 4968 1 
+      197 . 1 1 21 21 TYR HE1  H  1   6.968 . . 1 . . . . . . . . 4968 1 
+      198 . 1 1 21 21 TYR HD2  H  1   6.888 . . 1 . . . . . . . . 4968 1 
+      199 . 1 1 21 21 TYR N    N 15 115.660 . . 1 . . . . . . . . 4968 1 
+      200 . 1 1 21 21 TYR HE2  H  1   6.968 . . 1 . . . . . . . . 4968 1 
+      201 . 1 1 22 22 PHE HZ   H  1   7.498 . . 1 . . . . . . . . 4968 1 
+      202 . 1 1 22 22 PHE CA   C 13  55.220 . . 1 . . . . . . . . 4968 1 
+      203 . 1 1 22 22 PHE H    H  1   9.754 . . 1 . . . . . . . . 4968 1 
+      204 . 1 1 22 22 PHE HA   H  1   5.438 . . 1 . . . . . . . . 4968 1 
+      205 . 1 1 22 22 PHE N    N 15 119.960 . . 1 . . . . . . . . 4968 1 
+      206 . 1 1 22 22 PHE CD1  C 13 133.720 . . 1 . . . . . . . . 4968 1 
+      207 . 1 1 22 22 PHE CD2  C 13 133.720 . . 1 . . . . . . . . 4968 1 
+      208 . 1 1 22 22 PHE CE1  C 13 131.720 . . 1 . . . . . . . . 4968 1 
+      209 . 1 1 22 22 PHE CE2  C 13 131.720 . . 1 . . . . . . . . 4968 1 
+      210 . 1 1 22 22 PHE HB2  H  1   2.978 . . 2 . . . . . . . . 4968 1 
+      211 . 1 1 22 22 PHE CZ   C 13 130.720 . . 1 . . . . . . . . 4968 1 
+      212 . 1 1 22 22 PHE HB3  H  1   3.078 . . 2 . . . . . . . . 4968 1 
+      213 . 1 1 22 22 PHE HD1  H  1   7.328 . . 1 . . . . . . . . 4968 1 
+      214 . 1 1 22 22 PHE HD2  H  1   7.328 . . 1 . . . . . . . . 4968 1 
+      215 . 1 1 22 22 PHE HE1  H  1   7.408 . . 1 . . . . . . . . 4968 1 
+      216 . 1 1 22 22 PHE HE2  H  1   7.408 . . 1 . . . . . . . . 4968 1 
+      217 . 1 1 23 23 TYR CA   C 13  59.720 . . 1 . . . . . . . . 4968 1 
+      218 . 1 1 23 23 TYR H    H  1  10.524 . . 1 . . . . . . . . 4968 1 
+      219 . 1 1 23 23 TYR CD1  C 13 133.720 . . 1 . . . . . . . . 4968 1 
+      220 . 1 1 23 23 TYR CE1  C 13 118.220 . . 1 . . . . . . . . 4968 1 
+      221 . 1 1 23 23 TYR CD2  C 13 133.720 . . 1 . . . . . . . . 4968 1 
+      222 . 1 1 23 23 TYR HA   H  1   4.468 . . 1 . . . . . . . . 4968 1 
+      223 . 1 1 23 23 TYR CE2  C 13 118.220 . . 1 . . . . . . . . 4968 1 
+      224 . 1 1 23 23 TYR HB2  H  1   3.638 . . 2 . . . . . . . . 4968 1 
+      225 . 1 1 23 23 TYR HD1  H  1   7.378 . . 1 . . . . . . . . 4968 1 
+      226 . 1 1 23 23 TYR HB3  H  1   2.898 . . 2 . . . . . . . . 4968 1 
+      227 . 1 1 23 23 TYR HE1  H  1   6.508 . . 1 . . . . . . . . 4968 1 
+      228 . 1 1 23 23 TYR HD2  H  1   7.378 . . 1 . . . . . . . . 4968 1 
+      229 . 1 1 23 23 TYR N    N 15 124.860 . . 1 . . . . . . . . 4968 1 
+      230 . 1 1 23 23 TYR HE2  H  1   6.508 . . 1 . . . . . . . . 4968 1 
+      231 . 1 1 24 24 ASN HD22 H  1   8.078 . . 2 . . . . . . . . 4968 1 
+      232 . 1 1 24 24 ASN CA   C 13  50.720 . . 1 . . . . . . . . 4968 1 
+      233 . 1 1 24 24 ASN H    H  1   7.734 . . 1 . . . . . . . . 4968 1 
+      234 . 1 1 24 24 ASN HA   H  1   4.778 . . 1 . . . . . . . . 4968 1 
+      235 . 1 1 24 24 ASN HB2  H  1   2.348 . . 2 . . . . . . . . 4968 1 
+      236 . 1 1 24 24 ASN HB3  H  1   3.038 . . 2 . . . . . . . . 4968 1 
+      237 . 1 1 24 24 ASN N    N 15 125.560 . . 1 . . . . . . . . 4968 1 
+      238 . 1 1 24 24 ASN HD21 H  1   7.288 . . 2 . . . . . . . . 4968 1 
+      239 . 1 1 25 25 ALA H    H  1   8.754 . . 1 . . . . . . . . 4968 1 
+      240 . 1 1 25 25 ALA HA   H  1   3.938 . . 1 . . . . . . . . 4968 1 
+      241 . 1 1 25 25 ALA HB1  H  1   1.728 . . 1 . . . . . . . . 4968 1 
+      242 . 1 1 25 25 ALA HB2  H  1   1.728 . . 1 . . . . . . . . 4968 1 
+      243 . 1 1 25 25 ALA HB3  H  1   1.728 . . 1 . . . . . . . . 4968 1 
+      244 . 1 1 25 25 ALA CA   C 13  54.720 . . 1 . . . . . . . . 4968 1 
+      245 . 1 1 25 25 ALA CB   C 13  19.220 . . 1 . . . . . . . . 4968 1 
+      246 . 1 1 25 25 ALA N    N 15 126.560 . . 1 . . . . . . . . 4968 1 
+      247 . 1 1 26 26 LYS HE3  H  1   3.228 . . 1 . . . . . . . . 4968 1 
+      248 . 1 1 26 26 LYS HG2  H  1   1.678 . . 2 . . . . . . . . 4968 1 
+      249 . 1 1 26 26 LYS HG3  H  1   1.878 . . 2 . . . . . . . . 4968 1 
+      250 . 1 1 26 26 LYS CA   C 13  58.720 . . 1 . . . . . . . . 4968 1 
+      251 . 1 1 26 26 LYS H    H  1   7.884 . . 1 . . . . . . . . 4968 1 
+      252 . 1 1 26 26 LYS HA   H  1   4.238 . . 1 . . . . . . . . 4968 1 
+      253 . 1 1 26 26 LYS HB2  H  1   2.058 . . 1 . . . . . . . . 4968 1 
+      254 . 1 1 26 26 LYS HB3  H  1   2.058 . . 1 . . . . . . . . 4968 1 
+      255 . 1 1 26 26 LYS N    N 15 116.460 . . 1 . . . . . . . . 4968 1 
+      256 . 1 1 26 26 LYS HE2  H  1   3.228 . . 1 . . . . . . . . 4968 1 
+      257 . 1 1 27 27 ALA H    H  1   6.794 . . 1 . . . . . . . . 4968 1 
+      258 . 1 1 27 27 ALA HA   H  1   4.468 . . 1 . . . . . . . . 4968 1 
+      259 . 1 1 27 27 ALA HB1  H  1   1.358 . . 1 . . . . . . . . 4968 1 
+      260 . 1 1 27 27 ALA HB2  H  1   1.358 . . 1 . . . . . . . . 4968 1 
+      261 . 1 1 27 27 ALA HB3  H  1   1.358 . . 1 . . . . . . . . 4968 1 
+      262 . 1 1 27 27 ALA CA   C 13  52.220 . . 1 . . . . . . . . 4968 1 
+      263 . 1 1 27 27 ALA CB   C 13  20.720 . . 1 . . . . . . . . 4968 1 
+      264 . 1 1 27 27 ALA N    N 15 118.260 . . 1 . . . . . . . . 4968 1 
+      265 . 1 1 28 28 GLY H    H  1   8.104 . . 1 . . . . . . . . 4968 1 
+      266 . 1 1 28 28 GLY HA2  H  1   4.088 . . 1 . . . . . . . . 4968 1 
+      267 . 1 1 28 28 GLY HA3  H  1   4.088 . . 1 . . . . . . . . 4968 1 
+      268 . 1 1 28 28 GLY CA   C 13  46.220 . . 1 . . . . . . . . 4968 1 
+      269 . 1 1 28 28 GLY N    N 15 106.660 . . 1 . . . . . . . . 4968 1 
+      270 . 1 1 29 29 LEU CA   C 13  53.720 . . 1 . . . . . . . . 4968 1 
+      271 . 1 1 29 29 LEU H    H  1   6.794 . . 1 . . . . . . . . 4968 1 
+      272 . 1 1 29 29 LEU CD1  C 13  25.220 . . 1 . . . . . . . . 4968 1 
+      273 . 1 1 29 29 LEU CD2  C 13  25.220 . . 1 . . . . . . . . 4968 1 
+      274 . 1 1 29 29 LEU HA   H  1   4.918 . . 1 . . . . . . . . 4968 1 
+      275 . 1 1 29 29 LEU CG   C 13  26.220 . . 1 . . . . . . . . 4968 1 
+      276 . 1 1 29 29 LEU HB2  H  1   1.618 . . 2 . . . . . . . . 4968 1 
+      277 . 1 1 29 29 LEU HB3  H  1   1.888 . . 2 . . . . . . . . 4968 1 
+      278 . 1 1 29 29 LEU HD11 H  1   0.928 . . 2 . . . . . . . . 4968 1 
+      279 . 1 1 29 29 LEU HD12 H  1   0.928 . . 2 . . . . . . . . 4968 1 
+      280 . 1 1 29 29 LEU HD13 H  1   0.928 . . 2 . . . . . . . . 4968 1 
+      281 . 1 1 29 29 LEU HD21 H  1   1.018 . . 2 . . . . . . . . 4968 1 
+      282 . 1 1 29 29 LEU HD22 H  1   1.018 . . 2 . . . . . . . . 4968 1 
+      283 . 1 1 29 29 LEU HD23 H  1   1.018 . . 2 . . . . . . . . 4968 1 
+      284 . 1 1 29 29 LEU N    N 15 114.360 . . 1 . . . . . . . . 4968 1 
+      285 . 1 1 29 29 LEU HG   H  1   1.598 . . 1 . . . . . . . . 4968 1 
+      286 . 1 1 30 30 CYS H    H  1   8.354 . . 1 . . . . . . . . 4968 1 
+      287 . 1 1 30 30 CYS HA   H  1   5.798 . . 1 . . . . . . . . 4968 1 
+      288 . 1 1 30 30 CYS HB2  H  1   2.828 . . 2 . . . . . . . . 4968 1 
+      289 . 1 1 30 30 CYS CA   C 13  58.220 . . 1 . . . . . . . . 4968 1 
+      290 . 1 1 30 30 CYS HB3  H  1   3.858 . . 2 . . . . . . . . 4968 1 
+      291 . 1 1 30 30 CYS CB   C 13  49.720 . . 1 . . . . . . . . 4968 1 
+      292 . 1 1 30 30 CYS N    N 15 118.560 . . 1 . . . . . . . . 4968 1 
+      293 . 1 1 31 31 GLN HE21 H  1   7.338 . . 2 . . . . . . . . 4968 1 
+      294 . 1 1 31 31 GLN HG2  H  1   2.078 . . 2 . . . . . . . . 4968 1 
+      295 . 1 1 31 31 GLN HE22 H  1   7.508 . . 2 . . . . . . . . 4968 1 
+      296 . 1 1 31 31 GLN HG3  H  1   2.428 . . 2 . . . . . . . . 4968 1 
+      297 . 1 1 31 31 GLN CA   C 13  54.220 . . 1 . . . . . . . . 4968 1 
+      298 . 1 1 31 31 GLN H    H  1   8.744 . . 1 . . . . . . . . 4968 1 
+      299 . 1 1 31 31 GLN HA   H  1   5.008 . . 1 . . . . . . . . 4968 1 
+      300 . 1 1 31 31 GLN HB2  H  1   1.908 . . 2 . . . . . . . . 4968 1 
+      301 . 1 1 31 31 GLN HB3  H  1   2.338 . . 2 . . . . . . . . 4968 1 
+      302 . 1 1 31 31 GLN N    N 15 122.960 . . 1 . . . . . . . . 4968 1 
+      303 . 1 1 32 32 THR HG21 H  1   0.768 . . 1 . . . . . . . . 4968 1 
+      304 . 1 1 32 32 THR HG22 H  1   0.768 . . 1 . . . . . . . . 4968 1 
+      305 . 1 1 32 32 THR HG23 H  1   0.768 . . 1 . . . . . . . . 4968 1 
+      306 . 1 1 32 32 THR CA   C 13  61.220 . . 1 . . . . . . . . 4968 1 
+      307 . 1 1 32 32 THR CB   C 13  72.720 . . 1 . . . . . . . . 4968 1 
+      308 . 1 1 32 32 THR H    H  1   8.024 . . 1 . . . . . . . . 4968 1 
+      309 . 1 1 32 32 THR HA   H  1   5.458 . . 1 . . . . . . . . 4968 1 
+      310 . 1 1 32 32 THR HB   H  1   4.208 . . 1 . . . . . . . . 4968 1 
+      311 . 1 1 32 32 THR CG2  C 13  22.720 . . 1 . . . . . . . . 4968 1 
+      312 . 1 1 32 32 THR N    N 15 108.660 . . 1 . . . . . . . . 4968 1 
+      313 . 1 1 33 33 PHE HZ   H  1   7.168 . . 1 . . . . . . . . 4968 1 
+      314 . 1 1 33 33 PHE H    H  1   9.334 . . 1 . . . . . . . . 4968 1 
+      315 . 1 1 33 33 PHE CE1  C 13 131.720 . . 1 . . . . . . . . 4968 1 
+      316 . 1 1 33 33 PHE CD2  C 13 134.220 . . 1 . . . . . . . . 4968 1 
+      317 . 1 1 33 33 PHE HA   H  1   5.038 . . 1 . . . . . . . . 4968 1 
+      318 . 1 1 33 33 PHE CE2  C 13 131.720 . . 1 . . . . . . . . 4968 1 
+      319 . 1 1 33 33 PHE HB2  H  1   3.128 . . 2 . . . . . . . . 4968 1 
+      320 . 1 1 33 33 PHE HD1  H  1   7.248 . . 1 . . . . . . . . 4968 1 
+      321 . 1 1 33 33 PHE HB3  H  1   3.248 . . 2 . . . . . . . . 4968 1 
+      322 . 1 1 33 33 PHE CZ   C 13 129.720 . . 1 . . . . . . . . 4968 1 
+      323 . 1 1 33 33 PHE HE1  H  1   7.308 . . 1 . . . . . . . . 4968 1 
+      324 . 1 1 33 33 PHE HD2  H  1   7.248 . . 1 . . . . . . . . 4968 1 
+      325 . 1 1 33 33 PHE N    N 15 119.160 . . 1 . . . . . . . . 4968 1 
+      326 . 1 1 33 33 PHE HE2  H  1   7.308 . . 1 . . . . . . . . 4968 1 
+      327 . 1 1 34 34 VAL HG11 H  1   0.878 . . 2 . . . . . . . . 4968 1 
+      328 . 1 1 34 34 VAL HG12 H  1   0.878 . . 2 . . . . . . . . 4968 1 
+      329 . 1 1 34 34 VAL HG13 H  1   0.878 . . 2 . . . . . . . . 4968 1 
+      330 . 1 1 34 34 VAL HG21 H  1   0.978 . . 2 . . . . . . . . 4968 1 
+      331 . 1 1 34 34 VAL HG22 H  1   0.978 . . 2 . . . . . . . . 4968 1 
+      332 . 1 1 34 34 VAL HG23 H  1   0.978 . . 2 . . . . . . . . 4968 1 
+      333 . 1 1 34 34 VAL CA   C 13  62.720 . . 1 . . . . . . . . 4968 1 
+      334 . 1 1 34 34 VAL CB   C 13  32.220 . . 1 . . . . . . . . 4968 1 
+      335 . 1 1 34 34 VAL H    H  1   8.334 . . 1 . . . . . . . . 4968 1 
+      336 . 1 1 34 34 VAL HA   H  1   4.088 . . 1 . . . . . . . . 4968 1 
+      337 . 1 1 34 34 VAL HB   H  1   2.118 . . 1 . . . . . . . . 4968 1 
+      338 . 1 1 34 34 VAL CG1  C 13  21.720 . . 2 . . . . . . . . 4968 1 
+      339 . 1 1 34 34 VAL CG2  C 13  22.720 . . 2 . . . . . . . . 4968 1 
+      340 . 1 1 34 34 VAL N    N 15 118.660 . . 1 . . . . . . . . 4968 1 
+      341 . 1 1 35 35 TYR H    H  1   9.354 . . 1 . . . . . . . . 4968 1 
+      342 . 1 1 35 35 TYR CD1  C 13 134.220 . . 1 . . . . . . . . 4968 1 
+      343 . 1 1 35 35 TYR CE1  C 13 118.720 . . 1 . . . . . . . . 4968 1 
+      344 . 1 1 35 35 TYR CD2  C 13 134.220 . . 1 . . . . . . . . 4968 1 
+      345 . 1 1 35 35 TYR HA   H  1   5.058 . . 1 . . . . . . . . 4968 1 
+      346 . 1 1 35 35 TYR CE2  C 13 121.220 . . 1 . . . . . . . . 4968 1 
+      347 . 1 1 35 35 TYR HB2  H  1   2.678 . . 2 . . . . . . . . 4968 1 
+      348 . 1 1 35 35 TYR HD1  H  1   6.868 . . 2 . . . . . . . . 4968 1 
+      349 . 1 1 35 35 TYR HB3  H  1   2.828 . . 2 . . . . . . . . 4968 1 
+      350 . 1 1 35 35 TYR HE1  H  1   6.958 . . 2 . . . . . . . . 4968 1 
+      351 . 1 1 35 35 TYR HD2  H  1   7.948 . . 2 . . . . . . . . 4968 1 
+      352 . 1 1 35 35 TYR N    N 15 129.660 . . 1 . . . . . . . . 4968 1 
+      353 . 1 1 35 35 TYR HE2  H  1   7.058 . . 2 . . . . . . . . 4968 1 
+      354 . 1 1 36 36 GLY H    H  1   8.574 . . 1 . . . . . . . . 4968 1 
+      355 . 1 1 36 36 GLY HA2  H  1   3.408 . . 2 . . . . . . . . 4968 1 
+      356 . 1 1 36 36 GLY HA3  H  1   4.478 . . 2 . . . . . . . . 4968 1 
+      357 . 1 1 36 36 GLY CA   C 13  45.720 . . 1 . . . . . . . . 4968 1 
+      358 . 1 1 36 36 GLY N    N 15 113.860 . . 1 . . . . . . . . 4968 1 
+      359 . 1 1 37 37 GLY HA2  H  1   3.088 . . 2 . . . . . . . . 4968 1 
+      360 . 1 1 37 37 GLY HA3  H  1   4.408 . . 2 . . . . . . . . 4968 1 
+      361 . 1 1 37 37 GLY CA   C 13  45.720 . . 1 . . . . . . . . 4968 1 
+      362 . 1 1 38 38 CYS H    H  1   7.774 . . 1 . . . . . . . . 4968 1 
+      363 . 1 1 38 38 CYS HA   H  1   5.128 . . 1 . . . . . . . . 4968 1 
+      364 . 1 1 38 38 CYS HB2  H  1   3.208 . . 2 . . . . . . . . 4968 1 
+      365 . 1 1 38 38 CYS CA   C 13  55.720 . . 1 . . . . . . . . 4968 1 
+      366 . 1 1 38 38 CYS HB3  H  1   4.118 . . 2 . . . . . . . . 4968 1 
+      367 . 1 1 38 38 CYS N    N 15 114.960 . . 1 . . . . . . . . 4968 1 
+      368 . 1 1 39 39 ARG HG2  H  1   1.768 . . 1 . . . . . . . . 4968 1 
+      369 . 1 1 39 39 ARG HG3  H  1   1.768 . . 1 . . . . . . . . 4968 1 
+      370 . 1 1 39 39 ARG CA   C 13  56.720 . . 1 . . . . . . . . 4968 1 
+      371 . 1 1 39 39 ARG H    H  1   9.044 . . 1 . . . . . . . . 4968 1 
+      372 . 1 1 39 39 ARG HA   H  1   4.108 . . 1 . . . . . . . . 4968 1 
+      373 . 1 1 39 39 ARG HB2  H  1   2.458 . . 1 . . . . . . . . 4968 1 
+      374 . 1 1 39 39 ARG HB3  H  1   2.458 . . 1 . . . . . . . . 4968 1 
+      375 . 1 1 39 39 ARG HE   H  1   7.478 . . 1 . . . . . . . . 4968 1 
+      376 . 1 1 39 39 ARG HD2  H  1   3.428 . . 1 . . . . . . . . 4968 1 
+      377 . 1 1 39 39 ARG N    N 15 113.260 . . 1 . . . . . . . . 4968 1 
+      378 . 1 1 39 39 ARG HD3  H  1   3.428 . . 1 . . . . . . . . 4968 1 
+      379 . 1 1 40 40 ALA H    H  1   7.354 . . 1 . . . . . . . . 4968 1 
+      380 . 1 1 40 40 ALA HA   H  1   4.258 . . 1 . . . . . . . . 4968 1 
+      381 . 1 1 40 40 ALA HB1  H  1   1.368 . . 1 . . . . . . . . 4968 1 
+      382 . 1 1 40 40 ALA HB2  H  1   1.368 . . 1 . . . . . . . . 4968 1 
+      383 . 1 1 40 40 ALA HB3  H  1   1.368 . . 1 . . . . . . . . 4968 1 
+      384 . 1 1 40 40 ALA CA   C 13  54.220 . . 1 . . . . . . . . 4968 1 
+      385 . 1 1 40 40 ALA CB   C 13  20.220 . . 1 . . . . . . . . 4968 1 
+      386 . 1 1 40 40 ALA N    N 15 118.060 . . 1 . . . . . . . . 4968 1 
+      387 . 1 1 41 41 LYS CA   C 13  55.720 . . 1 . . . . . . . . 4968 1 
+      388 . 1 1 41 41 LYS H    H  1   8.284 . . 1 . . . . . . . . 4968 1 
+      389 . 1 1 41 41 LYS HA   H  1   4.618 . . 1 . . . . . . . . 4968 1 
+      390 . 1 1 41 41 LYS HB2  H  1   1.828 . . 2 . . . . . . . . 4968 1 
+      391 . 1 1 41 41 LYS HB3  H  1   2.418 . . 2 . . . . . . . . 4968 1 
+      392 . 1 1 41 41 LYS N    N 15 120.960 . . 1 . . . . . . . . 4968 1 
+      393 . 1 1 42 42 ARG HG2  H  1   1.398 . . 2 . . . . . . . . 4968 1 
+      394 . 1 1 42 42 ARG HG3  H  1   1.648 . . 2 . . . . . . . . 4968 1 
+      395 . 1 1 42 42 ARG CA   C 13  59.220 . . 1 . . . . . . . . 4968 1 
+      396 . 1 1 42 42 ARG CB   C 13  29.720 . . 1 . . . . . . . . 4968 1 
+      397 . 1 1 42 42 ARG H    H  1   8.294 . . 1 . . . . . . . . 4968 1 
+      398 . 1 1 42 42 ARG HA   H  1   3.828 . . 1 . . . . . . . . 4968 1 
+      399 . 1 1 42 42 ARG HB2  H  1   0.538 . . 2 . . . . . . . . 4968 1 
+      400 . 1 1 42 42 ARG HE   H  1   7.298 . . 1 . . . . . . . . 4968 1 
+      401 . 1 1 42 42 ARG HB3  H  1   1.208 . . 2 . . . . . . . . 4968 1 
+      402 . 1 1 42 42 ARG N    N 15 115.560 . . 1 . . . . . . . . 4968 1 
+      403 . 1 1 42 42 ARG HD2  H  1   2.868 . . 2 . . . . . . . . 4968 1 
+      404 . 1 1 42 42 ARG HD3  H  1   3.038 . . 2 . . . . . . . . 4968 1 
+      405 . 1 1 43 43 ASN HD22 H  1   8.138 . . 2 . . . . . . . . 4968 1 
+      406 . 1 1 43 43 ASN CA   C 13  51.220 . . 1 . . . . . . . . 4968 1 
+      407 . 1 1 43 43 ASN CB   C 13  35.220 . . 1 . . . . . . . . 4968 1 
+      408 . 1 1 43 43 ASN H    H  1   7.184 . . 1 . . . . . . . . 4968 1 
+      409 . 1 1 43 43 ASN HA   H  1   5.218 . . 1 . . . . . . . . 4968 1 
+      410 . 1 1 43 43 ASN HB2  H  1   3.448 . . 2 . . . . . . . . 4968 1 
+      411 . 1 1 43 43 ASN HB3  H  1   3.558 . . 2 . . . . . . . . 4968 1 
+      412 . 1 1 43 43 ASN N    N 15 116.160 . . 1 . . . . . . . . 4968 1 
+      413 . 1 1 43 43 ASN HD21 H  1   7.948 . . 2 . . . . . . . . 4968 1 
+      414 . 1 1 44 44 ASN H    H  1   6.744 . . 1 . . . . . . . . 4968 1 
+      415 . 1 1 44 44 ASN HA   H  1   5.068 . . 1 . . . . . . . . 4968 1 
+      416 . 1 1 44 44 ASN HB2  H  1   2.668 . . 2 . . . . . . . . 4968 1 
+      417 . 1 1 44 44 ASN CA   C 13  54.220 . . 1 . . . . . . . . 4968 1 
+      418 . 1 1 44 44 ASN HB3  H  1   2.948 . . 2 . . . . . . . . 4968 1 
+      419 . 1 1 44 44 ASN N    N 15 121.060 . . 1 . . . . . . . . 4968 1 
+      420 . 1 1 45 45 PHE H    H  1   9.904 . . 1 . . . . . . . . 4968 1 
+      421 . 1 1 45 45 PHE HA   H  1   5.308 . . 1 . . . . . . . . 4968 1 
+      422 . 1 1 45 45 PHE HZ   H  1   7.808 . . 1 . . . . . . . . 4968 1 
+      423 . 1 1 45 45 PHE HB2  H  1   2.958 . . 2 . . . . . . . . 4968 1 
+      424 . 1 1 45 45 PHE CA   C 13  56.220 . . 1 . . . . . . . . 4968 1 
+      425 . 1 1 45 45 PHE HB3  H  1   3.578 . . 2 . . . . . . . . 4968 1 
+      426 . 1 1 45 45 PHE CZ   C 13 130.720 . . 1 . . . . . . . . 4968 1 
+      427 . 1 1 45 45 PHE N    N 15 122.360 . . 1 . . . . . . . . 4968 1 
+      428 . 1 1 46 46 LYS HE3  H  1   3.238 . . 1 . . . . . . . . 4968 1 
+      429 . 1 1 46 46 LYS HG2  H  1   1.658 . . 2 . . . . . . . . 4968 1 
+      430 . 1 1 46 46 LYS HG3  H  1   1.788 . . 2 . . . . . . . . 4968 1 
+      431 . 1 1 46 46 LYS CA   C 13  58.220 . . 1 . . . . . . . . 4968 1 
+      432 . 1 1 46 46 LYS H    H  1   9.884 . . 1 . . . . . . . . 4968 1 
+      433 . 1 1 46 46 LYS HA   H  1   4.558 . . 1 . . . . . . . . 4968 1 
+      434 . 1 1 46 46 LYS HB2  H  1   2.168 . . 2 . . . . . . . . 4968 1 
+      435 . 1 1 46 46 LYS HB3  H  1   2.278 . . 2 . . . . . . . . 4968 1 
+      436 . 1 1 46 46 LYS N    N 15 120.260 . . 1 . . . . . . . . 4968 1 
+      437 . 1 1 46 46 LYS HE2  H  1   3.238 . . 1 . . . . . . . . 4968 1 
+      438 . 1 1 47 47 SER H    H  1   7.444 . . 1 . . . . . . . . 4968 1 
+      439 . 1 1 47 47 SER HA   H  1   4.708 . . 1 . . . . . . . . 4968 1 
+      440 . 1 1 47 47 SER HB2  H  1   4.028 . . 2 . . . . . . . . 4968 1 
+      441 . 1 1 47 47 SER CA   C 13  56.220 . . 1 . . . . . . . . 4968 1 
+      442 . 1 1 47 47 SER HB3  H  1   4.288 . . 2 . . . . . . . . 4968 1 
+      443 . 1 1 47 47 SER CB   C 13  67.220 . . 1 . . . . . . . . 4968 1 
+      444 . 1 1 47 47 SER N    N 15 108.560 . . 1 . . . . . . . . 4968 1 
+      445 . 1 1 48 48 ALA H    H  1   8.114 . . 1 . . . . . . . . 4968 1 
+      446 . 1 1 48 48 ALA HA   H  1   3.318 . . 1 . . . . . . . . 4968 1 
+      447 . 1 1 48 48 ALA HB1  H  1   1.208 . . 1 . . . . . . . . 4968 1 
+      448 . 1 1 48 48 ALA HB2  H  1   1.208 . . 1 . . . . . . . . 4968 1 
+      449 . 1 1 48 48 ALA HB3  H  1   1.208 . . 1 . . . . . . . . 4968 1 
+      450 . 1 1 48 48 ALA CA   C 13  55.220 . . 1 . . . . . . . . 4968 1 
+      451 . 1 1 48 48 ALA CB   C 13  17.720 . . 1 . . . . . . . . 4968 1 
+      452 . 1 1 48 48 ALA N    N 15 125.360 . . 1 . . . . . . . . 4968 1 
+      453 . 1 1 49 49 GLU HG2  H  1   2.378 . . 2 . . . . . . . . 4968 1 
+      454 . 1 1 49 49 GLU HG3  H  1   2.528 . . 2 . . . . . . . . 4968 1 
+      455 . 1 1 49 49 GLU CA   C 13  60.720 . . 1 . . . . . . . . 4968 1 
+      456 . 1 1 49 49 GLU H    H  1   8.554 . . 1 . . . . . . . . 4968 1 
+      457 . 1 1 49 49 GLU HA   H  1   4.038 . . 1 . . . . . . . . 4968 1 
+      458 . 1 1 49 49 GLU HB2  H  1   2.018 . . 2 . . . . . . . . 4968 1 
+      459 . 1 1 49 49 GLU HB3  H  1   2.188 . . 2 . . . . . . . . 4968 1 
+      460 . 1 1 49 49 GLU N    N 15 119.560 . . 1 . . . . . . . . 4968 1 
+      461 . 1 1 50 50 ASP H    H  1   7.814 . . 1 . . . . . . . . 4968 1 
+      462 . 1 1 50 50 ASP HA   H  1   4.458 . . 1 . . . . . . . . 4968 1 
+      463 . 1 1 50 50 ASP HB2  H  1   2.898 . . 2 . . . . . . . . 4968 1 
+      464 . 1 1 50 50 ASP CA   C 13  57.720 . . 1 . . . . . . . . 4968 1 
+      465 . 1 1 50 50 ASP HB3  H  1   3.058 . . 2 . . . . . . . . 4968 1 
+      466 . 1 1 50 50 ASP N    N 15 119.760 . . 1 . . . . . . . . 4968 1 
+      467 . 1 1 51 51 CYS H    H  1   6.964 . . 1 . . . . . . . . 4968 1 
+      468 . 1 1 51 51 CYS HA   H  1   1.878 . . 1 . . . . . . . . 4968 1 
+      469 . 1 1 51 51 CYS HB2  H  1   3.128 . . 2 . . . . . . . . 4968 1 
+      470 . 1 1 51 51 CYS CA   C 13  59.220 . . 1 . . . . . . . . 4968 1 
+      471 . 1 1 51 51 CYS HB3  H  1   3.348 . . 2 . . . . . . . . 4968 1 
+      472 . 1 1 51 51 CYS N    N 15 119.560 . . 1 . . . . . . . . 4968 1 
+      473 . 1 1 52 52 MET HG2  H  1   2.868 . . 1 . . . . . . . . 4968 1 
+      474 . 1 1 52 52 MET HG3  H  1   2.868 . . 1 . . . . . . . . 4968 1 
+      475 . 1 1 52 52 MET CA   C 13  57.220 . . 1 . . . . . . . . 4968 1 
+      476 . 1 1 52 52 MET H    H  1   8.544 . . 1 . . . . . . . . 4968 1 
+      477 . 1 1 52 52 MET CE   C 13  16.720 . . 1 . . . . . . . . 4968 1 
+      478 . 1 1 52 52 MET HA   H  1   4.328 . . 1 . . . . . . . . 4968 1 
+      479 . 1 1 52 52 MET HB2  H  1   2.128 . . 2 . . . . . . . . 4968 1 
+      480 . 1 1 52 52 MET HB3  H  1   2.228 . . 2 . . . . . . . . 4968 1 
+      481 . 1 1 52 52 MET HE1  H  1   2.338 . . 1 . . . . . . . . 4968 1 
+      482 . 1 1 52 52 MET HE2  H  1   2.338 . . 1 . . . . . . . . 4968 1 
+      483 . 1 1 52 52 MET HE3  H  1   2.338 . . 1 . . . . . . . . 4968 1 
+      484 . 1 1 52 52 MET N    N 15 121.060 . . 1 . . . . . . . . 4968 1 
+      485 . 1 1 53 53 ARG HG2  H  1   1.808 . . 2 . . . . . . . . 4968 1 
+      486 . 1 1 53 53 ARG HG3  H  1   1.928 . . 2 . . . . . . . . 4968 1 
+      487 . 1 1 53 53 ARG CA   C 13  59.720 . . 1 . . . . . . . . 4968 1 
+      488 . 1 1 53 53 ARG H    H  1   8.254 . . 1 . . . . . . . . 4968 1 
+      489 . 1 1 53 53 ARG HA   H  1   4.148 . . 1 . . . . . . . . 4968 1 
+      490 . 1 1 53 53 ARG HB2  H  1   2.018 . . 2 . . . . . . . . 4968 1 
+      491 . 1 1 53 53 ARG HB3  H  1   2.098 . . 2 . . . . . . . . 4968 1 
+      492 . 1 1 53 53 ARG HE   H  1   7.468 . . 1 . . . . . . . . 4968 1 
+      493 . 1 1 53 53 ARG HD2  H  1   3.378 . . 1 . . . . . . . . 4968 1 
+      494 . 1 1 53 53 ARG N    N 15 120.260 . . 1 . . . . . . . . 4968 1 
+      495 . 1 1 53 53 ARG HD3  H  1   3.378 . . 1 . . . . . . . . 4968 1 
+      496 . 1 1 54 54 THR HG21 H  1   1.778 . . 1 . . . . . . . . 4968 1 
+      497 . 1 1 54 54 THR HG22 H  1   1.778 . . 1 . . . . . . . . 4968 1 
+      498 . 1 1 54 54 THR HG23 H  1   1.778 . . 1 . . . . . . . . 4968 1 
+      499 . 1 1 54 54 THR CA   C 13  66.720 . . 1 . . . . . . . . 4968 1 
+      500 . 1 1 54 54 THR CB   C 13  69.720 . . 1 . . . . . . . . 4968 1 
+      501 . 1 1 54 54 THR H    H  1   7.374 . . 1 . . . . . . . . 4968 1 
+      502 . 1 1 54 54 THR HA   H  1   4.238 . . 1 . . . . . . . . 4968 1 
+      503 . 1 1 54 54 THR HB   H  1   4.168 . . 1 . . . . . . . . 4968 1 
+      504 . 1 1 54 54 THR CG2  C 13  22.720 . . 1 . . . . . . . . 4968 1 
+      505 . 1 1 54 54 THR N    N 15 113.260 . . 1 . . . . . . . . 4968 1 
+      506 . 1 1 55 55 CYS H    H  1   8.214 . . 1 . . . . . . . . 4968 1 
+      507 . 1 1 55 55 CYS HA   H  1   4.608 . . 1 . . . . . . . . 4968 1 
+      508 . 1 1 55 55 CYS HB2  H  1   2.188 . . 2 . . . . . . . . 4968 1 
+      509 . 1 1 55 55 CYS CA   C 13  54.720 . . 1 . . . . . . . . 4968 1 
+      510 . 1 1 55 55 CYS HB3  H  1   2.408 . . 2 . . . . . . . . 4968 1 
+      511 . 1 1 55 55 CYS N    N 15 114.560 . . 1 . . . . . . . . 4968 1 
+      512 . 1 1 56 56 GLY H    H  1   7.924 . . 1 . . . . . . . . 4968 1 
+      513 . 1 1 56 56 GLY HA2  H  1   4.008 . . 1 . . . . . . . . 4968 1 
+      514 . 1 1 56 56 GLY HA3  H  1   4.008 . . 1 . . . . . . . . 4968 1 
+      515 . 1 1 56 56 GLY CA   C 13  46.720 . . 1 . . . . . . . . 4968 1 
+      516 . 1 1 56 56 GLY N    N 15 107.560 . . 1 . . . . . . . . 4968 1 
+      517 . 1 1 57 57 GLY H    H  1   8.154 . . 1 . . . . . . . . 4968 1 
+      518 . 1 1 57 57 GLY HA2  H  1   4.158 . . 2 . . . . . . . . 4968 1 
+      519 . 1 1 57 57 GLY HA3  H  1   3.968 . . 2 . . . . . . . . 4968 1 
+      520 . 1 1 57 57 GLY CA   C 13  45.220 . . 1 . . . . . . . . 4968 1 
+      521 . 1 1 57 57 GLY N    N 15 108.560 . . 1 . . . . . . . . 4968 1 
+      522 . 1 1 58 58 ALA H    H  1   7.904 . . 1 . . . . . . . . 4968 1 
+      523 . 1 1 58 58 ALA HA   H  1   4.188 . . 1 . . . . . . . . 4968 1 
+      524 . 1 1 58 58 ALA HB1  H  1   1.478 . . 1 . . . . . . . . 4968 1 
+      525 . 1 1 58 58 ALA HB2  H  1   1.478 . . 1 . . . . . . . . 4968 1 
+      526 . 1 1 58 58 ALA HB3  H  1   1.478 . . 1 . . . . . . . . 4968 1 
+      527 . 1 1 58 58 ALA CA   C 13  54.720 . . 1 . . . . . . . . 4968 1 
+      528 . 1 1 58 58 ALA CB   C 13  20.220 . . 1 . . . . . . . . 4968 1 
+      529 . 1 1 58 58 ALA N    N 15 129.260 . . 1 . . . . . . . . 4968 1 
+
+   stop_
+
+save_
+
