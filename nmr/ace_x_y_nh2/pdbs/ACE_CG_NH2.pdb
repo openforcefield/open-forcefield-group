@@ -1,0 +1,41 @@
+REMARK   1 CREATED WITH OPENMM 6.0, 2014-05-28
+ATOM      1  H3  ACE A   1       5.640   1.293  11.794  1.00  0.00           H  
+ATOM      2  CH3 ACE A   1       5.979   2.191  12.078  1.00  0.00           C  
+ATOM      3  H1  ACE A   1       6.165   2.757  11.273  1.00  0.00           H  
+ATOM      4  H2  ACE A   1       5.293   2.661  12.636  1.00  0.00           H  
+ATOM      5  C   ACE A   1       7.289   2.004  12.850  1.00  0.00           C  
+ATOM      6  O   ACE A   1       7.375   1.125  13.709  1.00  0.00           O  
+ATOM      7  N   CYS A   2       8.330   2.791  12.593  1.00  0.00           N  
+ATOM      8  H   CYS A   2       8.258   3.505  11.895  1.00  0.00           H  
+ATOM      9  CA  CYS A   2       9.646   2.747  13.235  1.00  0.00           C  
+ATOM     10  HA  CYS A   2       9.533   2.308  14.128  1.00  0.00           H  
+ATOM     11  CB  CYS A   2      10.646   1.925  12.381  1.00  0.00           C  
+ATOM     12  HB3 CYS A   2      10.246   1.052  12.097  1.00  0.00           H  
+ATOM     13  HB2 CYS A   2      10.874   2.426  11.544  1.00  0.00           H  
+ATOM     14  SG  CYS A   2      12.188   1.536  13.272  1.00  0.00           S  
+ATOM     15  HG  CYS A   2      12.634   1.066  12.509  1.00  0.00           H  
+ATOM     16  C   CYS A   2      10.094   4.200  13.474  1.00  0.00           C  
+ATOM     17  O   CYS A   2       9.963   5.041  12.580  1.00  0.00           O  
+ATOM     18  N   GLY A   3      10.623   4.549  14.643  1.00  0.00           N  
+ATOM     19  H   GLY A   3      10.729   3.867  15.368  1.00  0.00           H  
+ATOM     20  CA  GLY A   3      11.047   5.924  14.870  1.00  0.00           C  
+ATOM     21  HA3 GLY A   3      11.189   6.387  13.994  1.00  0.00           H  
+ATOM     22  HA2 GLY A   3      10.343   6.425  15.376  1.00  0.00           H  
+ATOM     23  C   GLY A   3      12.376   5.913  15.631  1.00  0.00           C  
+ATOM     24  O   GLY A   3      12.517   5.158  16.595  1.00  0.00           O  
+ATOM     25  N   NH2 A   4      13.367   6.714  15.250  1.00  0.00           N  
+ATOM     26  HN1 NH2 A   4      13.245   7.324  14.466  1.00  0.00           H  
+ATOM     27  HN2 NH2 A   4      14.236   6.706  15.748  1.00  0.00           H  
+TER      28      NH2 A   4
+CONECT    1    2
+CONECT    2    5    3    4    1
+CONECT    3    2
+CONECT    4    2
+CONECT    5    2    6    7
+CONECT    6    5
+CONECT    7    5
+CONECT   23   25
+CONECT   25   23   26   27
+CONECT   26   25
+CONECT   27   25
+END
