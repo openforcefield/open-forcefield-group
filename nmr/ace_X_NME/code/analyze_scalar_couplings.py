@@ -15,7 +15,7 @@ for (ff, water, seq) in products:
         continue
     phi = md.compute_phi(t)[1][:, 0] * 180 / np.pi
     psi = md.compute_psi(t)[1][:, 0] * 180 / np.pi
-    J = scalar_couplings.J3_HN_HA(phi * pi / 180.).mean()
+    J = scalar_couplings.J3_HN_HA(phi).mean()
     data.append([ff, water, aa, J])
 
 data = pd.DataFrame(data, columns=["ff", "water", "aa", "J"])
