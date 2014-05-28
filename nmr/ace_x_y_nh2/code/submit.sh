@@ -42,4 +42,4 @@
 cd $PBS_O_WORKDIR
 
 # start spark workers
-/cbio/jclab/projects/kyleb/ForceFieldData/data/ace_x_y_nh2/code/equilibrate.py $PBS_ARRAYID
+/cbio/jclab/projects/kyleb/ForceFieldData/nmr/ace_x_y_nh2/code/equilibrate.py $PBS_ARRAYID
