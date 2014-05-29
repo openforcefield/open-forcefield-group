@@ -3,22 +3,21 @@ import mdtraj as md
 from ace_x_y_nh2_parameters import *
 import scalar_couplings
 
-reference = pd.read_csv("./experimental_data/baldwin_table1_2006_couplings.csv", index_col=0)
-reference = reference["coupling"]
+larger = pd.read_csv("./data/larger_couplings.csv")
+smaller = pd.read_csv("./data/smaller_couplings.csv")
 
 data = []
 for (ff, water, seq) in products:
     try:
-        aa = seq.split("_")[1]
+        aa0, aa1 = seq.split("_")[1]
         t = md.load("./dcd/%s_%s_%s.dcd" % (ff, water, seq), top="./pdbs/%s.pdb" % (seq))
     except:
         continue
-    phi = md.compute_phi(t)[1][:, 0] * 180 / np.pi
-    psi = md.compute_psi(t)[1][:, 0] * 180 / np.pi
-    J = scalar_couplings.J3_HN_HA(phi).mean()
-    data.append([ff, water, aa, J])
+    phi = md.compute_phi(t)[1] * 180 / np.pi
+    J0, J1 = scalar_couplings.J3_HN_HA(phi).mean(0)
+    data.append([ff, water, aa0, aa1, J0, J1])
 
-data = pd.DataFrame(data, columns=["ff", "water", "AA", "J"])
+data = pd.DataFrame(data, columns=["ff", "water", "AA0", "AA1", "J0", "J1"])
 
 X = data.pivot_table(values="J", cols=["AA"], rows=["ff", "water"])
 delta = X - reference
