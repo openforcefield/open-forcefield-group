@@ -1,7 +1,6 @@
 import pandas as pd
 import mdtraj as md
 from ace_x_y_nh2_parameters import *
-import scalar_couplings
 
 larger = pd.read_csv("./data/larger_couplings.csv")
 smaller = pd.read_csv("./data/smaller_couplings.csv")
@@ -35,11 +34,12 @@ for (ff, water, seq) in products:
     try:
         aa0, aa1 = seq.split("_")[1]
         aa_string = "%s%s" % (aa0, aa1)
-        t = md.load("./dcd/%s_%s_%s.dcd" % (ff, water, seq), top="./pdbs/%s.pdb" % (seq))
+        t = md.load("./dcd/%s_%s_%s.dcd" % (ff, water, seq), top="./pdbs/%s.pdb" % (seq))[1500:]
     except:
         continue
-    phi = md.compute_phi(t)[1] * 180 / np.pi
-    J0, J1 = scalar_couplings.J3_HN_HA(phi).mean(0)
+    #phi = md.compute_phi(t)[1] * 180 / np.pi
+    #J0, J1 = scalar_couplings.J3_HN_HA(phi).mean(0)
+    J0, J1 = md.compute_J3_HN_HA(t)[1].mean(0)
     data.append([ff, water, aa_string, 0, J0])
     data.append([ff, water, aa_string, 1, J1])
 
