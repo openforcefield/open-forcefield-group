@@ -26,4 +26,7 @@ A project for discussing and aggregating data, tools, ideas, and discussions for
 * Jean-Francois Truchon, Vertex `<Jean-Francois_Truchon@vrtx.com>`
 * Dan MacKay, Novartis `<daniel.mckay@novartis.com>`
 * David Mobley, UCI `<dmobley@uci.edu>`
+* Brittany Zimmerman, U. Virginia `<brittanys.zimmerman@virginia.edu>`
+* Levi Naden,  U. Virginia `<levinadem@virginia.edu>`
+* Michael Shirts, U. Virginia `<michael.shirts@virginia.edu>`
 
