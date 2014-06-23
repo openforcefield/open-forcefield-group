@@ -38,4 +38,4 @@ or 0.002%.
 ## Useful references
 
 * A database of molecules and liquids with their CRC data and GAFF/OPLS parameter files: http://virtualchemistry.org
-
+* A tool for generating literature reports with reference data for mixtures of interest http://trc.nist.gov/thermolit/main/home.html#help
