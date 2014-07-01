@@ -15,10 +15,6 @@ KRNNFKSAEDCMRTCGGA
 
 
 
-http://rest.bmrb.wisc.edu/bmrb/NMR-STAR3/6338
-http://www.rcsb.org/pdb/explore/explore.do?structureId=2EVN
-
-
       pH            5.8 0.1 n/a 4968 1 
       temperature 303   0.2 K   4968 1 
 
