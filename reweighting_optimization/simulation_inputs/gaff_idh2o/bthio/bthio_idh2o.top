@@ -1,0 +1,17 @@
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include tip4pew water topology:
+#include "../../itps/water.itp"
+
+; Include molecule topology:
+#include "bthio.itp"
+
+[ system ]
+id water in bthio
+
+[ molecules ]
+; Compound        #mols
+water             1
+SOL               121

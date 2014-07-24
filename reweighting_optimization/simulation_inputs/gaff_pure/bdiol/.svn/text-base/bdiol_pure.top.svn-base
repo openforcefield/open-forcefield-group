@@ -1,0 +1,14 @@
+
+; The force field files to be included:
+#include "gaforcefield.itp"
+
+; Include molecule topology:
+#include "bdiol.itp"
+
+[ system ]
+butanediol liquid
+
+[ molecules ]
+; Compound        #mols
+bdiol           1
+SOL           128

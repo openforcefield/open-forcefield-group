@@ -1,0 +1,19 @@
+; leu.top created by rdparm2gmx.pl Fri Oct 22 14:32:40 PDT 2004
+; Heavily edited (format and atom names) by Brittany S. Zimmerman May 15 2013
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include molecule topology:
+#include "leu.itp"
+
+; Include tip4pew water topolgy:
+#include "../../itps/water.itp"
+
+[ system ]
+14 leu in water
+
+[ molecules ]
+; Compound        #mols
+water              1
+SOL               148

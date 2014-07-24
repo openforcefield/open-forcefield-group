@@ -1,0 +1,17 @@
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include molecule topology:
+#include "ser.itp"
+
+;Include water topology
+#include "../../itps/water.itp"
+
+[ system ]
+ser liquid in water
+
+[ molecules ]
+; Compound        #mols
+water           1
+SOL               369

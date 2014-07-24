@@ -1,0 +1,70 @@
+[ atomtypes ]
+; name   bond_type    mass  charge ptype      sigma      epsilon
+ gaff_001    c      0.0000  0.0000  A   3.39967e-01  3.59824e-01   ; sp2 carbon in C=O, C=S
+; gaff_002   c1      0.0000  0.0000  A   
+; gaff_003   c2      0.0000  0.0000  A   
+ gaff_004   c3      0.0000  0.0000  A   3.39967e-01  4.57730e-01   ; sp3 carbon (AMBER94/99: CT)
+ gaff_005   ca      0.0000  0.0000  A   3.39967e-01  3.59824e-01   ; sp2 carbon, aromatic
+ gaff_006    n      0.0000  0.0000  A   3.25000e-01  7.11280e-01   ; sp2 nitrogen in amides
+; gaff_007   n1      0.0000  0.0000  A   
+; gaff_008   n2      0.0000  0.0000  A   
+; gaff_009   n3      0.0000  0.0000  A   
+; gaff_010   n4      0.0000  0.0000  A   
+ gaff_011   na      0.0000  0.0000  A   3.25000e-01  7.11280e-01   ; sp2 nitrogen with 3 subst.
+; gaff_012   nh      0.0000  0.0000  A   
+; gaff_013   no      0.0000  0.0000  A   
+ gaff_014    o      0.0000  0.0000  A   2.95992e-01  8.78640e-01   ; sp2 oxygen in C=O, COO-
+ gaff_015   oh      0.0000  0.0000  A   3.06647e-01  8.80314e-01   ; sp3 oxygen in hydroxyl group
+; gaff_016   os      0.0000  0.0000  A   
+; gaff_017   s2      0.0000  0.0000  A   
+ gaff_018   sh      0.0000  0.0000  A   3.56359e-01  1.04600e+00   ; sp3 oxygen in ethers and esters
+ gaff_019   ss      0.0000  0.0000  A   3.56359e-01  1.01500e+00   ; sp3 sulfur (p=S, C=S, etc.)
+; gaff_020   s4      0.0000  0.0000  A   
+; gaff_021   s6      0.0000  0.0000  A   
+; gaff_022   p2      0.0000  0.0000  A   
+; gaff_023   p3      0.0000  0.0000  A   
+; gaff_024   p4      0.0000  0.0000  A   
+; gaff_025   p5      0.0000  0.0000  A   
+ gaff_026   hc      0.0000  0.0000  A   2.64953e-01  6.56888e-02   ; hydrogen on aliphatic carbon
+ gaff_027   ha      0.0000  0.0000  A   2.59964e-01  6.27600e-02   ; hydrogen on aromatic carbon
+ gaff_028   hn      0.0000  0.0000  A   1.06908e-01  6.56888e-02   ; hydrogen on nitrogen
+ gaff_029   ho      0.0000  0.0000  A   0.00000e+00  0.00000e+00   ; hydrogen on oxygen
+ gaff_030   hs      0.0000  0.0000  A   1.06908e-01  6.56888e-02   ; hydrogen on sulfur
+; gaff_031   hp      0.0000  0.0000  A   
+ gaff_032    f      0.0000  0.0000  A   3.11815e-01  2.55224e-01   ; any fluorine (AMBER94/99: F)
+ gaff_033   cl      0.0000  0.0000  A   4.40104e-01  4.18400e-01   ; any chlorine (AMBER94/99: CL)
+ gaff_034   br      0.0000  0.0000  A   0.00000e+00  0.00000e+00   ; any bromine (AMBER94/99: BR)
+ gaff_035    i      0.0000  0.0000  A   4.18722e-01  1.67360e+00   ; any iodine (AMBER94/99: I)
+ gaff_36a   cc      0.0000  0.0000  A   3.39967e-01  3.59824e-01   ; inner sp2 carbon in conjugated ring systems
+ gaff_36b   cd      0.0000  0.0000  A   3.39967e-01  3.59824e-01   ; inner sp2 carbon in conjugated ring systems
+; gaff_37a   ce      0.0000  0.0000  A   
+; gaff_37b   cf      0.0000  0.0000  A   
+; gaff_38a   cp      0.0000  0.0000  A   
+; gaff_38b   cq      0.0000  0.0000  A   
+; gaff_039   cu      0.0000  0.0000  A   
+; gaff_040   cv      0.0000  0.0000  A   
+; gaff_041   cx      0.0000  0.0000  A   
+; gaff_042   cy      0.0000  0.0000  A   
+ gaff_043   nb      0.0000  0.0000  A   3.25000e-01  7.11280e-01   ; aromatic nitrogen
+ gaff_44a   nc      0.0000  0.0000  A   3.25000e-01  7.11280e-01   ; inner sp2 nitrogen in conjugated ring systems, 2 subst.
+ gaff_44b   nd      0.0000  0.0000  A   3.25000e-01  7.11280e-01   ; inner sp2 nitrogen in conjugated ring systems, 2 subst.
+; gaff_45a   ne      0.0000  0.0000  A   
+; gaff_45b   nf      0.0000  0.0000  A   
+; gaff_046   pb      0.0000  0.0000  A   
+; gaff_47a   pc      0.0000  0.0000  A   
+; gaff_47b   pd      0.0000  0.0000  A   
+; gaff_48a   pe      0.0000  0.0000  A   
+; gaff_48b   pf      0.0000  0.0000  A   
+; gaff_049   px      0.0000  0.0000  A   
+; gaff_050   py      0.0000  0.0000  A   
+; gaff_051   sx      0.0000  0.0000  A   
+; gaff_052   sy      0.0000  0.0000  A   
+ gaff_053   h1      0.0000  0.0000  A   2.47135e-01  6.56888e-02   ; hydrogen on aliphatic carbon with 1 electron-withdrawal group
+; gaff_054   h2      0.0000  0.0000  A   
+; gaff_055   h3      0.0000  0.0000  A   
+ gaff_056   h4      0.0000  0.0000  A   2.51055e-01  6.27600e-02   ; hydrogen on aromatic carbon with 1 electron-withdrawal group
+; gaff_057   h5      0.0000  0.0000  A   
+; tip4p-EW
+ opls_113   OW    15.99940  0.00000 A   3.16435e-01  6.80946e-01
+ opls_114   HW     1.00800  0.52422 A   0.00000e+00  0.00000e+00
+ opls_115   MW     0.00000 -1.04844 A   0.00000e+00  0.00000e+00

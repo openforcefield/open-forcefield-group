@@ -1,0 +1,14 @@
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include molecule topology:
+#include "meth.itp"
+
+[ system ]
+methanol liquid
+
+[ molecules ]
+; Compound    #mols
+meth           1
+SOL           439
