@@ -1,0 +1,14 @@
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include molecule topology:
+#include "bthio.itp"
+
+[ system ]
+bthio liquid
+
+[ molecules ]
+; Compound        #mols
+bthio           1
+SOL           121

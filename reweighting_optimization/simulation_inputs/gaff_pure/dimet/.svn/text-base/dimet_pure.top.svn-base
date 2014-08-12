@@ -1,0 +1,14 @@
+
+; The force field files to be included:
+#include "gaforcefield.itp"
+
+; Include molecule topology:
+#include "dimet.itp"
+
+[ system ]
+dimet liquid
+
+[ molecules ]
+; Compound        #mols
+dimet           1
+SOL           137

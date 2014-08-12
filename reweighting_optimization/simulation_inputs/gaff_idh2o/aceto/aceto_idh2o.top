@@ -1,0 +1,17 @@
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include solute tip4pew water molecule topology:
+#include "../../itps/water.itp"
+
+; Include solvent molecule topology:
+#include "aceto.itp"
+
+[ system ]
+id tip4pew in acetone in water
+
+[ molecules ]
+; Compound        #mols
+water           1
+SOL               206

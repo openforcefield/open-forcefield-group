@@ -1,0 +1,121 @@
+; ser.top created by rdparm2gmx.pl Fri Oct 22 14:32:40 PDT 2004
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+[ atomtypes ]
+;name  bond_type    mass    charge   ptype          sigma      epsilon
+gaff_1        CB      0.0000  0.0000  A   3.39967e-01  4.57730e-01
+gaff_2       HB1      0.0000  0.0000  A   2.47135e-01  6.56888e-02
+gaff_3       HB2      0.0000  0.0000  A   2.47135e-01  6.56888e-02
+gaff_4       HB3      0.0000  0.0000  A   2.47135e-01  6.56888e-02
+gaff_5        OG      0.0000  0.0000  A   3.06647e-01  8.80314e-01
+gaff_6        HG      0.0000  0.0000  A   0.00000e+00  0.00000e+00
+gaff_1m       CB      0.0000  0.0000  A   3.39967e-01  0.00000e+00
+gaff_2m      HB1      0.0000  0.0000  A   2.47135e-01  0.00000e+00
+gaff_3m      HB2      0.0000  0.0000  A   2.47135e-01  0.00000e+00
+gaff_4m      HB3      0.0000  0.0000  A   2.47135e-01  0.00000e+00
+gaff_5m       OG      0.0000  0.0000  A   3.06647e-01  0.00000e+00
+gaff_6m       HG      0.0000  0.0000  A   0.00000e+00  0.00000e+00
+
+[ atomtypes ]
+ opls_113   OW     15.99940     0.00000       A    3.16435e-01  6.80946e-01
+ opls_114   HW      1.00800     0.52422       A    0.00000e+00  0.00000e+00
+ opls_115   LP      0.00000    -1.04844       A    0.00000e+00  0.00000e+00
+
+[ moleculetype ]
+; molname	nrexcl
+SOL		1
+
+[ atoms ]
+; id	at type	res nr 	residu name	at name		cg nr	charge
+1	opls_115	1	SOL	 MW		1      -1.04844
+2	opls_114	1	SOL	HW1		1	0.52422
+3	opls_114	1	SOL	HW2		1	0.52422
+4       opls_113	1	SOL	 OW		1	0
+
+
+ 
+[ settles ]
+; i	funct	doh	dhh
+1	1	0.09572	0.15139
+
+;[ constraints ] 
+; i     j       funct   length  force.c.
+;4       2       1       0.09572     
+;4       3       1       0.09572     
+;2       3       1       0.15139     
+
+; The position of the dummy is computed as follows:
+;
+;		O
+;  	      
+;	    	D
+;	  
+;	H		H
+;
+; const = distance (OD) / [ cos (angle(DOH)) 	* distance (OH) ]
+;	  0.0125 nm	/ [ cos (52.26 deg)	* 0.09572 nm	]
+
+; Dummy pos x4 = x1 + a*(x2-x1) + b*(x3-x1)
+
+[ dummies3 ]
+; Dummy from			funct	a		b
+1	4	2	3	1	0.1066767208    0.1066767208
+
+[ exclusions ]
+1	2	3	4
+2	1	3	4
+3	1	2	4
+4	1	2	3
+
+[ moleculetype ]
+; Name            nrexcl
+ser             3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB
+     1     gaff_1      1    ser     CB      1    0.11642   12.00000       gaff_1m     0.0000    12.0000
+     2     gaff_2      1    ser    HB1      2    0.01370    1.00000       gaff_2m     0.0000     1.0000
+     3     gaff_3      1    ser    HB2      3    0.01361    1.00000       gaff_3m     0.0000     1.0000
+     4     gaff_4      1    ser    HB3      4    0.05868    1.00000       gaff_4m     0.0000     1.0000
+     5     gaff_5      1    ser     OG      5   -0.59887   16.00000       gaff_5m     0.0000    16.0000
+     6     gaff_6      1    ser     HG      6    0.39646    1.00000       gaff_6m     0.0000     1.0000
+
+[ bonds ]
+;  ai    aj funct  r  k
+    1     2     1  1.0930e-01  2.8108e+05
+    1     3     1  1.0930e-01  2.8108e+05
+    1     4     1  1.0930e-01  2.8108e+05
+    5     6     1  9.7400e-02  3.0928e+05
+    1     5     1  1.4260e-01  2.6284e+05
+
+[ pairs ]
+;  ai    aj funct
+     2      6      1
+     3      6      1
+     4      6      1
+
+[ angles ]
+;  ai    aj    ak funct  theta   cth
+    1     5     6     1  1.0816e+02  3.9413e+02
+    2     1     3     1  1.0955e+02  3.2803e+02
+    2     1     4     1  1.0955e+02  3.2803e+02
+    2     1     5     1  1.0988e+02  4.2677e+02
+    3     1     4     1  1.0955e+02  3.2803e+02
+    3     1     5     1  1.0988e+02  4.2677e+02
+    4     1     5     1  1.0988e+02  4.2677e+02
+
+[ dihedrals ]
+;i  j   k  l	 func	C0  ...  C5
+    2   1   5   6     3     0.69873     2.09618     0.00000    -2.79491     0.00000     0.00000	;
+    3   1   5   6     3     0.69873     2.09618     0.00000    -2.79491     0.00000     0.00000	;
+    4   1   5   6     3     0.69873     2.09618     0.00000    -2.79491     0.00000     0.00000	;
+
+[ system ]
+6 ser
+
+[ molecules ]
+; Compound        #mols
+ser              1
+SOL               896

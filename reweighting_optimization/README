@@ -1,0 +1,150 @@
+A collection of python scripts for the optimization of protein parameters.
+
+===============================================================================
+REFERENCES
+===============================================================================
+EXPERIMENTAL PROPERTY VALUES
+[1] Y. Marcus. The Properties of Solvents. Wiley, 1998. 70-77
+[2] D. R. Lide. CRC Handbook of Chemistry and Physics 90th edition,CRC Press: Cleveland, Ohio. 2009.
+[3] C. L. Yaws. Yaw's Handbook of Thermodynamics and Physical Properties of Chemical Compounds. Knovel: Beaumont, Texas. 2003.
+[4] Carl Caleman, Paul J. van Maaren, Minyan Hong, Jochen S. Hub, Luciano T. Costa and David van der Spoel.  Force field benchmark of organic liquids: Density, Enthalpy of Vaporization, Heat Capacities, Surface Tension, Isothermal Compressibility, Volumentric Expansion Coefficient, and Dielectric Constant, J. Chem. Theor. Comput., 2012; 8: 61-74.
+[5] Wang, Junmei; Hou, Tingjun. Application of Molecular Dynamics Simulations in Molecular Property Prediction. 1. Density and Heat of Vaporization. J. Chem. Theor. Comput., 2011; 7: 2151 - 2165.
+[6] Shirts MR and Chodera JD. Statistically optimal analysis of samples from multiple equilibrium states. J. Chem. Phys. 2008; 129:124105.
+[7] Shirts, Michael R.; Pande, Vinjay S. Solvation free energies of amino acid side chain analogs for common molecular mechanics water models. J. Chem. Phys. 122, 134508 (2005)
+[8] Yaws; Critical Property Data for Chemical Engineers and Chemists.  2012
+
+PURE FLUID INPUT FILES
+[8]David van der Spoel, Paul J. van Maaren and Carl Caleman. GROMACS Molecule & Liquid Database, Bioinformatics
+
+===============================================================================
+AUTHORS
+===============================================================================
+Brittany S. Zimmerman <brittanys.zimmerman@gmail.com>
+Michael R. Shirts <michael.shirts@virginia.edu>
+
+===============================================================================
+COPYRIGHT NOTICE
+===============================================================================
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; including but not limited to the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ See the GNU General Public License for more details.
+
+===============================================================================
+MANIFEST
+===============================================================================
+simulation_inputs directory:
+
+    Contains the input coordinate and topology files needed to run gaff simulations in GROMACS
+        gaff_pure contains input files for pure fluid simulations at 298.15K
+		aceto - acetone
+		bdiol - 1,4-butanediol
+		bhyde - benzaldehyde
+		bol   - 1-butanol
+		bthio - 1-butanethiol
+		cyclo - cyclohexanone
+		dimet - N,N-dimethylacetamide
+		hepta - 2-heptanone
+		phe   - toluene
+		pyrid - pyridine
+		pyrro - pyrrole
+		quino - quinoline
+		ser   - methanol
+		thr   - ethanol
+		trime - 2,4,6-trimethylpyridine
+
+        gaff_t4900 contains input files for a single molecule of interest in a box of 900 molecules of tip4p-ew water at 300K
+		ala   - methane
+		asn   - acetamide
+		cys   - methanethiol
+		gln   - propionamide
+		hid   - 4- methylimidazole
+		hie   - 4- methylimidazole
+		ile   - n-butane
+		leu   - iso-butane
+		met   - methyl ethyl sulfide
+		phe   - toluene
+		ser   - methanol
+		thr   - ethanol
+		trp   - 3-methylindole
+		tyr   - p-cresol
+		val   - propane
+
+        gaff_idh2o contains input files for a single molecule of tip4pew water in a 3 nm box of molecules of interest at 298.15K
+                bthio - 1-butanethiol
+                cyclo - cyclohexanone
+                cys   - methanethiol
+                hepta - 2-heptanone
+                ile   - n-butane
+                leu   - iso-butane
+                phe   - toluene
+                ser   - methanol
+                thr   - ethanol
+                tyr   - p-cresol
+                val   - propane
+
+scripts directory:
+
+        fep_mdp_setup.py - creates mdp files for all lambdas (all alchemical states) from a template mdp file. Can be run on a cluster or on a local machine.
+
+        grompp.py - runs grompp_d (GROMACS grompp compiled in double precision) on all lambda (alchemical states) for a set of simulations. Can be used on the cluster (will run on the frontend, rather than submitting to the pbs queue) or on a local machine.
+
+        fep_run.py - writes and then submits pbs job files to the cluster queue, can also be used to run jobs off of the cluster with some slight modifications.
+
+        optimizer.py - optimizes parameters and gets properties or gets properties with no optimization.  See usage section below.
+
+        pbsfile.sh - template pbsfile.  Used by fep_run.py and freeenergysim.py and optimizer.py if used for optimization
+        
+===============================================================================
+REQUIREMENTS
+===============================================================================
+Python Anaconda
+http://continuum.io/downloads
+
+OR Python, Numpy, and SciPy separately. 
+
+Python 2.4 or later:
+    http://www.python.org/
+
+NumPy package 1.5 or later:
+    http://numpy.scipy.org/
+
+SciPy package:
+    http://scipy.org/
+
+
+pymbar package (available on github):
+    https://github.com/choderalab/pymbar
+
+GROMACS molecular dynamics package:
+    www.gromacs.org
+
+PBS
+
+===============================================================================
+USAGE
+===============================================================================
+optimizer.py
+    Command Line: python optimizer_resimulate.py
+    There are several options that are available.  Call the following for help:
+    python optimizer_resimulate.py -h
+
+To use optimizer.py:
+    1. Ensure that simulations at initial parameters have been run.  Use fep_mdp_setup.py, grompp.py, fep_run.py to run simulations.
+    2. List the prefixes of the simulations that you would like to optimize or find properties for (line 136)
+    3. List directories of simulation types found in prefixes (lines 143-149)
+        Current directory structure calls for files of different systems to be located in different directories identified by molecule name, either the first three letters of the prefix, or the section of the prefix before the '_'.  This will later be made more resilient.
+    4. Call program from command line - files will be written to your current working directory! 
+	python optimizer.py -h will show help on various command line options
+
+For getting properties:
+	python optimizer.py
+
+For optimization:
+	python optimizer.py -o
+
+
+===============================================================================
+README LAST UPDATED ON:
+===============================================================================
+July 24, 2014 by Brittany S. Zimmerman

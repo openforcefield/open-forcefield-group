@@ -5,10 +5,13 @@ import numpy as np
 import pandas as pd
 import nmrpystar
 import mdtraj as md
+import argparse
 
-# Run compare_shifts_cache.py [PDB] [XTC] [12345.str]
-# The purpose of this script is to cache the NMR predictions for each frame to disk,
-# in order to save on computer time.
+parser = argparse.ArgumentParser()
+parser.add_argument('-max', type=int, default=-1, help='Go up to a maximum frame (default is whole trajectory)')
+args, sys.argv = parser.parse_known_args(sys.argv)
+
+# Run compare_shifts.py [PDB] [XTC] [12345.str]
 
 t = md.load(sys.argv[2], top=sys.argv[1])
 outfnm = sys.argv[4]
@@ -32,21 +35,29 @@ expt = x.set_index(["resSeq", "name"]).value
 print "Doing ShiftX2 prediction."
 outd = sys.argv[2]+'.shiftx2'
 
-if not os.path.exists(outd): os.makedirs(outd)
-expn.to_csv(os.path.join(outd, 'expn.csv'))
+if not os.path.exists(outd): 
+    os.makedirs(outd)
+os.chmod(outd, 0755)
+if not os.path.exists(os.path.join(outd, 'expn.csv')): 
+    expn.to_csv(os.path.join(outd, 'expn.csv'))
 np.savetxt(os.path.join(outd, 'expt.txt'), expt)
 
 predictions = []
 for i, ti in enumerate(t):
+    if i == args.max: break
     fnm = os.path.join(outd, '%i.txt' % i)
     if os.path.exists(fnm):
+        os.chmod(fnm, 0644)
         print "Loading ShiftX2 prediction for frame %i." % i
         prediction_i = pd.DataFrame.from_csv(fnm, index_col=[0,1])
     else:
         print "Computing ShiftX2 prediction for frame %i." % i
-        if not os.path.exists(outd): os.makedirs(outd)
+        if not os.path.exists(outd): 
+            os.makedirs(outd)
+        os.chmod(outd, 0755)
         prediction_i = md.nmr.chemical_shifts_shiftx2(ti)
         prediction_i.to_csv(fnm)
+        os.chmod(fnm, 0644)
     predictions.append(prediction_i)
 
 prediction = pd.concat(predictions).mean(1)

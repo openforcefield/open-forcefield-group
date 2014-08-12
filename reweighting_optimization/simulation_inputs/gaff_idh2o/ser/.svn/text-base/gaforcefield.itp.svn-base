@@ -1,0 +1,16 @@
+********************************************************************
+* Files written by Brittany S. Zimmerman                           *
+* Cite:                                                            *
+*  Wang, Wolf, Caldwell, Kollman, and Case (2004). J. Comp.        *
+* Chem. 25(9) 1157-1174                                            *
+*  Cornell, Cieplak, Bayly, Gould, Merz, Ferguson, Spellmeyer,     *
+* Fox, Waldwell, Kollman (1995). J. Am. Chem. Soc. 117 5179-5197   *
+********************************************************************
+
+#define _FF_GAFF
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+#include "/home/bsz9ur/SVN/proteinparam/testseropt3/gaffnonbonded.1.itp"

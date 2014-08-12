@@ -1,0 +1,14 @@
+
+; The force field files to be included:
+#include "gaforcefield.itp"
+
+; Include molecule topology:
+#include "hepta.itp"
+
+[ system ]
+hepta liquid
+
+[ molecules ]
+; Compound        #mols
+hepta           1
+SOL           84

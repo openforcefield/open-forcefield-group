@@ -1,0 +1,14 @@
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include molecule topology:
+#include "bhyde.itp"
+
+[ system ]
+bhyde liquid
+
+[ molecules ]
+; Compound        #mols
+bhyde           1
+SOL           110

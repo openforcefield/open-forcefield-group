@@ -1,0 +1,14 @@
+
+; The force field files to be included:
+#include "gaforcefield.itp"
+
+; Include molecule topology:
+#include "quino.itp"
+
+[ system ]
+quino liquid
+
+[ molecules ]
+; Compound        #mols
+quino           1
+SOL           91

@@ -1,0 +1,19 @@
+; asn.top created by rdparm2gmx.pl Sat Oct 23 20:08:06 PDT 2004
+; Heavily edited by Brittany S. Zimmerman, May 15 2013
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include ala topology:
+#include "asn.itp"
+
+; Include t4900ew (tip4p-EW, 900 molecules) water topolgy:
+#include "../../itps/tip4pew.itp"
+
+[ system ]
+9 asn
+
+[ molecules ]
+; Compound        #mols
+asn              1
+SOL               894

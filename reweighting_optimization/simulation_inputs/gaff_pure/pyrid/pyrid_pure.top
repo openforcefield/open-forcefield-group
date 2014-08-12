@@ -1,0 +1,14 @@
+
+; The force field files to be included:
+#include "../../itps/gaforcefield.itp"
+
+; Include molecule topology:
+#include "pyrid.itp"
+
+[ system ]
+pyrid liquid
+
+[ molecules ]
+; Compound        #mols
+pyrid           1
+SOL           157
