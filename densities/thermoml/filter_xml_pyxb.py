@@ -12,54 +12,66 @@ def parse(filename):
         sCommonName = Compound.sCommonName[0]
         sFormulaMolec = Compound.sFormulaMolec
         compound_dict[nOrgNum] = dict(sCommonName=sCommonName, sFormulaMolec=sFormulaMolec)
-    print(compound_dict)
 
     alldata = []
     for PureOrMixtureData in root.PureOrMixtureData:
-        print("PureOrMixtureData")
         component_list = []
         for Component in PureOrMixtureData.Component:
-            print("Component")
             nSampleNm = Component.nSampleNm
             nOrgNum = Component.RegNum.nOrgNum
             sCommonName = compound_dict[nOrgNum]
             component_list.append(dict(sCommonName=sCommonName, nOrgNum=nOrgNum))
-        print(component_list)
 
         property_dict = {}
         for Property in PureOrMixtureData.Property:
-            print("Property")
             nPropNumber = Property.nPropNumber
             ePropName = Property.Property_MethodID.PropertyGroup.content()[0].ePropName  # ASSUMING LENGTH 1
             property_dict[nPropNumber] = ePropName
-        print(property_dict)
 
-        #state = dict(pressure=None, temperature=None, solvent_composition={})
-        state = dict(Pressure=None, Temperature=None)
+        state = dict(filename=filename)
+        
+        state["Pressure, kPa"] = None  # This is the only pressure unit used in ThermoML
+        state['Temperature, K'] = None  # This is the only temperature unit used in ThermoML
+        
         composition = dict()
         for Constraint in PureOrMixtureData.Constraint:
-            print("Constraint")
             nConstraintValue = Constraint.nConstraintValue
             ConstraintType = Constraint.ConstraintID.ConstraintType
-            if ConstraintType.ePressure is not None:
-                state["Pressure"] = nConstraintValue
-            if ConstraintType.eTemperature is not None:
-                state["Temperature"] = nConstraintValue
+            
+            assert len(ConstraintType.content()) == 1
+            constraint_type = ConstraintType.content()[0]
+            state[constraint_type] = nConstraintValue
+            print(filename, constraint_type)
             if ConstraintType.eSolventComposition is not None:
                 nOrgNum = Constraint.ConstraintID.RegNum.nOrgNum
                 sCommonName = compound_dict[nOrgNum]["sCommonName"]
-                composition[sCommonName] = nConstraintValue
                 solvents = [compound_dict[x.nOrgNum]["sCommonName"] for x in Constraint.Solvent.RegNum]
-                composition["other"] = solvents            
-
-        print(state)
+            
+            if constraint_type in ["Mole fraction", "Mass Fraction", "Molality, mol/kg", "Solvent: Amount concentration (molarity), mol/dm3"]:
+                nOrgNum = Constraint.ConstraintID.RegNum.nOrgNum
+                sCommonName = compound_dict[nOrgNum]["sCommonName"]
+                solvents = [compound_dict[x.nOrgNum]["sCommonName"] for x in Constraint.Solvent.RegNum]
+                solvent_string = "%s___%s" % (sCommonName, "__".join(solvents))
+                state["%s metadata" % constraint_type] = solvent_string
+                print(solvent_string)
 
         variable_dict = {}
         for Variable in PureOrMixtureData.Variable:
             nVarNumber = Variable.nVarNumber
             VariableType = Variable.VariableID.VariableType
-            vtype, vunit = VariableType.content()[0].split(", ")  # Assuming length one!!!
+            assert len(VariableType.content()) == 1
+            vtype = VariableType.content()[0]  # Assume length 1, haven't found counterexample yet.
             variable_dict[nVarNumber] = vtype
+            if vtype in ["Mole fraction", "Mass Fraction", "Molality, mol/kg", "Solvent: Amount concentration (molarity), mol/dm3"]:
+                nOrgNum = Variable.VariableID.RegNum.nOrgNum
+                sCommonName = compound_dict[nOrgNum]["sCommonName"]
+                if Variable.Solvent is not None:
+                    solvents = [compound_dict[x.nOrgNum]["sCommonName"] for x in Variable.Solvent.RegNum]
+                else:
+                    solvents = []
+                solvent_string = "%s___%s" % (sCommonName, "__".join(solvents))
+                state["%s Variable metadata" % vtype] = solvent_string
+                print(solvent_string)
         
         
         for NumValues in PureOrMixtureData.NumValues:
@@ -76,33 +88,22 @@ def parse(filename):
                 nPropValue = PropertyValue.nPropValue
                 ptype = property_dict[nPropNumber]
                 current_data[ptype] = nPropValue
-            current_data["composition"] = current_composition
+
             alldata.append(current_data)
     return alldata, root
 
 filename = "./10.1007/s10765-010-0742-8.xml"
-alldata, root = parse(filename)
+#alldata, root = parse(filename)
+
 
 data = []
-for d in alldata:
-    if u'Mass density, kg/m3' in d:
-        print(d)
-        data.append(d)
-
-data = pd.DataFrame(data)
-
-
-
-filename = "./10.1007/s10765-010-0742-8.xml"
-data = []
-for filename in glob.glob("./*/*.xml"):
+for filename in glob.glob("./*/*.xml")[40:70]:
     try:
         alldata, root = parse(filename)
     except IOError:
         continue
     for d in alldata:
-        if u'Mass density, kg/m3' in d:
-            print(d)
+        if True or u'Mass density, kg/m3' in d:
             data.append(d)
 
 data = pd.DataFrame(data)
