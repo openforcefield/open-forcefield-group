@@ -4,6 +4,7 @@ import glob
 import thermoml_schema  # Obtained by `wget http://media.iupac.org/namespaces/ThermoML/ThermoML.xsd` and `pyxbgen ThermoML.xsd`
 
 def parse(filename):
+    print(filename)
     root = thermoml_schema.CreateFromDocument(open(filename).read())
 
     compound_dict = {}
@@ -41,7 +42,6 @@ def parse(filename):
             assert len(ConstraintType.content()) == 1
             constraint_type = ConstraintType.content()[0]
             state[constraint_type] = nConstraintValue
-            print(filename, constraint_type)
             if ConstraintType.eSolventComposition is not None:
                 nOrgNum = Constraint.ConstraintID.RegNum.nOrgNum
                 sCommonName = compound_dict[nOrgNum]["sCommonName"]
@@ -50,10 +50,12 @@ def parse(filename):
             if constraint_type in ["Mole fraction", "Mass Fraction", "Molality, mol/kg", "Solvent: Amount concentration (molarity), mol/dm3"]:
                 nOrgNum = Constraint.ConstraintID.RegNum.nOrgNum
                 sCommonName = compound_dict[nOrgNum]["sCommonName"]
-                solvents = [compound_dict[x.nOrgNum]["sCommonName"] for x in Constraint.Solvent.RegNum]
+                if Constraint.Solvent is not None:
+                    solvents = [compound_dict[x.nOrgNum]["sCommonName"] for x in Constraint.Solvent.RegNum]
+                else:
+                    solvents = []                
                 solvent_string = "%s___%s" % (sCommonName, "__".join(solvents))
                 state["%s metadata" % constraint_type] = solvent_string
-                print(solvent_string)
 
         variable_dict = {}
         for Variable in PureOrMixtureData.Variable:
@@ -71,7 +73,6 @@ def parse(filename):
                     solvents = []
                 solvent_string = "%s___%s" % (sCommonName, "__".join(solvents))
                 state["%s Variable metadata" % vtype] = solvent_string
-                print(solvent_string)
         
         
         for NumValues in PureOrMixtureData.NumValues:
@@ -97,7 +98,7 @@ filename = "./10.1007/s10765-010-0742-8.xml"
 
 
 data = []
-for filename in glob.glob("./*/*.xml")[40:70]:
+for filename in glob.glob("./*/*.xml"):#[0:200]:
     try:
         alldata, root = parse(filename)
     except IOError:
@@ -107,3 +108,4 @@ for filename in glob.glob("./*/*.xml")[40:70]:
             data.append(d)
 
 data = pd.DataFrame(data)
+X = data.ix[data["Mass density, kg/m3"].dropna().index]
