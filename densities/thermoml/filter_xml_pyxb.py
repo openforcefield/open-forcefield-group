@@ -1,10 +1,10 @@
 import copy
 import pandas as pd
 import glob
-import binding  # Obtained by `wget http://media.iupac.org/namespaces/ThermoML/ThermoML.xsd` and `pyxbgen ThermoML.xsd`
+import thermoml_schema  # Obtained by `wget http://media.iupac.org/namespaces/ThermoML/ThermoML.xsd` and `pyxbgen ThermoML.xsd`
 
 def parse(filename):
-    root = binding.CreateFromDocument(open(filename).read())
+    root = thermoml_schema.CreateFromDocument(open(filename).read())
 
     compound_dict = {}
     for Compound in root.Compound:
